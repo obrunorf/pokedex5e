@@ -1,0 +1,36 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 1,
+      "dice_max": 6,
+      "move": true
+    },
+    "10": {
+      "amount": 2,
+      "dice_max": 8,
+      "move": true
+    },
+    "17": {
+      "amount": 4,
+      "dice_max": 6,
+      "move": true
+    },
+    "5": {
+      "amount": 1,
+      "dice_max": 12,
+      "move": true
+    }
+  },
+  "Description": "You extend a sharp vine to whip the target with. This vine can strike anything within 15 feet of you. Make a melee attack roll, doing grass damage on a hit.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "STR",
+    "DEX"
+  ],
+  "Move Time": "1 action",
+  "PP": 15,
+  "Range": "Melee (15ft reach)",
+  "Scaling": "Higher Levels: The damage dice roll for this move changes to 1d12 at level 5, 2d8 at level 10, and 4d6 at level 17.",
+  "Type": "Grass",
+  "atk": true
+}

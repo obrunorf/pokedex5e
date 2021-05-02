@@ -1,0 +1,36 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 1,
+      "dice_max": 10,
+      "move": true
+    },
+    "10": {
+      "amount": 5,
+      "dice_max": 4,
+      "move": true
+    },
+    "17": {
+      "amount": 4,
+      "dice_max": 8,
+      "move": true
+    },
+    "5": {
+      "amount": 2,
+      "dice_max": 8,
+      "move": true
+    }
+  },
+  "Description": "You strike out at a target creature with your wings. Make a melee attack roll, doing flying damage on a hit.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "STR",
+    "DEX"
+  ],
+  "Move Time": "1 action",
+  "PP": 20,
+  "Range": "Melee",
+  "Scaling": "Higher Levels: The damage dice roll for this move changes to 2d8 at level 5, 5d4 at level 10, and 4d8 at level 17.",
+  "Type": "Flying",
+  "atk": true
+}

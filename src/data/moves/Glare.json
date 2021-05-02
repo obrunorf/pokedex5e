@@ -1,0 +1,13 @@
+{
+  "Description": "You stare into the depths of a creature's eyes with intense ferocity. The creature must make a WIS saving throw against your Move DC or become frightened for the duration. A creature frightened in this way must make a WIS save against your Move DC at the end of each of its turns to remove the effect.",
+  "Duration": "1 minute",
+  "Move Power": [
+    "STR",
+    "CHA"
+  ],
+  "Move Time": "1 action",
+  "PP": 10,
+  "Range": "60ft",
+  "Save": "WIS",
+  "Type": "Normal"
+}

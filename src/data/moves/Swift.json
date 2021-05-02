@@ -1,0 +1,36 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 1,
+      "dice_max": 4,
+      "move": false,
+      "times": 2
+    },
+    "10": {
+      "amount": 1,
+      "dice_max": 4,
+      "move": false,
+      "times": 5
+    },
+    "17": {
+      "amount": 1,
+      "dice_max": 4,
+      "move": false,
+      "times": 6
+    },
+    "5": {
+      "amount": 1,
+      "dice_max": 4,
+      "move": false,
+      "times": 4
+    }
+  },
+  "Description": "You fire two projectiles at any creature you choose in range. They do not have to target the same creature. Each hit for normal damage. This move also targets creature during the invulnerable stages of Dig, Fly, Bounce, etc.",
+  "Duration": "Instantaneous",
+  "Move Time": "1 action",
+  "PP": 10,
+  "Range": "60ft",
+  "Scaling": "Higher Levels: You fire 4 projectiles at level 5, 5 projectiles at level 10, and 6 projectiles at level 17.",
+  "Type": "Normal",
+  "auto_hit": true
+}

@@ -1,0 +1,37 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 2,
+      "dice_max": 6,
+      "move": true
+    },
+    "10": {
+      "amount": 4,
+      "dice_max": 6,
+      "move": true
+    },
+    "17": {
+      "amount": 6,
+      "dice_max": 6,
+      "move": true
+    },
+    "5": {
+      "amount": 2,
+      "dice_max": 8,
+      "move": true
+    }
+  },
+  "Description": "You send a beam of invisible, psychic energy at a target in range. The target must make a WIS saving throw against your Move DC, taking psychic damage on a fail, or half as much on a success. Creatures that fail the save by 5 or more become confused.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "DEX",
+    "INT",
+    "WIS"
+  ],
+  "Move Time": "1 action",
+  "PP": 10,
+  "Range": "60ft",
+  "Save": "WIS",
+  "Scaling": "Higher Levels: The damage dice roll for this move changes to 2d8 at level 5, 4d6 at level 10, and 6d6 at level 17.",
+  "Type": "Psychic"
+}

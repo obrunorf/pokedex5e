@@ -1,0 +1,35 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 1,
+      "dice_max": 8,
+      "move": true
+    },
+    "10": {
+      "amount": 4,
+      "dice_max": 4,
+      "move": true
+    },
+    "17": {
+      "amount": 3,
+      "dice_max": 10,
+      "move": true
+    },
+    "5": {
+      "amount": 2,
+      "dice_max": 6,
+      "move": true
+    }
+  },
+  "Description": "You summon an infestation of tiny insects to attack a creature for multiple turns. Make a ranged attack on a target. On a hit, the target takes bug damage and becomes infested with swarming bugs. As long as you maintain concentration, the target takes an additional bug damage at the end of each of its next three turns.",
+  "Duration": "3 rounds, Concentration",
+  "Move Power": [
+    "DEX"
+  ],
+  "Move Time": "1 action",
+  "PP": 5,
+  "Range": "40ft",
+  "Scaling": "Higher Levels: The damage dice roll for this move changes to 1d6 at level 5, 1d8 at level 10, and 2d6 at level 17.",
+  "Type": "Bug",
+  "atk": true
+}

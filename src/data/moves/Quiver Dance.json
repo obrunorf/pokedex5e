@@ -1,0 +1,9 @@
+{
+  "Description": "You lightly perform a mystical dance. For the duration, add +1 to your AC, attack rolls, and damage.",
+  "Duration": "1 minute, Concentration",
+  "Move Time": "1 action",
+  "PP": 10,
+  "Range": "Self",
+  "Scaling": "Higher Levels: Add +2 to your AC at level 10 and above",
+  "Type": "Bug"
+}

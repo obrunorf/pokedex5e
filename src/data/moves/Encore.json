@@ -1,0 +1,14 @@
+{
+  "Description": "After being targeted by a move, force a creature to make a WIS save against your Move DC as a reaction. On a fail, the creature must target you with the same move used on their next turn, even if you may be out of range.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "WIS",
+    "CHA"
+  ],
+  "Move Time": "1 reaction",
+  "PP": 3,
+  "Range": "100ft",
+  "Save": "WIS",
+  "Scaling": "Higher Levels: The number of turns the creature must use the move increases to 2 turns at level 10 and 3 turns at level 17.",
+  "Type": "Normal"
+}

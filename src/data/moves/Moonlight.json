@@ -1,0 +1,36 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 2,
+      "dice_max": 12,
+      "move": true
+    },
+    "10": {
+      "amount": 7,
+      "dice_max": 6,
+      "move": true
+    },
+    "17": {
+      "amount": 8,
+      "dice_max": 8,
+      "move": true
+    },
+    "5": {
+      "amount": 3,
+      "dice_max": 10,
+      "move": true
+    }
+  },
+  "Description": "A ray of moonlight shines upon you, basking you in healing light. The user gains hit points. If this move is activated during the day, halve the total healing.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "WIS",
+    "CHA"
+  ],
+  "Move Time": "1 action",
+  "PP": 3,
+  "Range": "Self",
+  "Scaling": "Higher Levels: The dice roll for healing changes to 3d10 at level 5, 7d6 at level 10, and 8d8 at level 17.",
+  "Type": "Fairy",
+  "atk": false
+}

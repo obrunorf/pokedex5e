@@ -1,0 +1,8 @@
+{
+  "Description": "You sacrifice health for attack. When using this move, decrease your current HP by half your maximum, but increase your Strength score by 10 while you remain in battle. The effect ends if your current HP rises above half your maximum.",
+  "Duration": "While in battle",
+  "Move Time": "1 action",
+  "PP": 5,
+  "Range": "Self",
+  "Type": "Normal"
+}

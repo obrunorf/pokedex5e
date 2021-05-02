@@ -1,0 +1,9 @@
+{
+  "Description": "You become one with your inner self. For the duration, you gain +1 to attack rolls and saving throws.",
+  "Duration": "1 minute, Concentration",
+  "Move Time": "1 action",
+  "PP": 5,
+  "Range": "Self",
+  "Scaling": "Higher Levels: The bonus changes to +2 at level 5, +3 at level 10, and +4 at level 17.",
+  "Type": "Psychic"
+}

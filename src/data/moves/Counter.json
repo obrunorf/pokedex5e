@@ -1,0 +1,36 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 1,
+      "dice_max": 4,
+      "move": true
+    },
+    "10": {
+      "amount": 1,
+      "dice_max": 8,
+      "move": true
+    },
+    "17": {
+      "amount": 2,
+      "dice_max": 6,
+      "move": true
+    },
+    "5": {
+      "amount": 1,
+      "dice_max": 6,
+      "move": true
+    }
+  },
+  "Description": "When you are hit by a melee attack, you can use your reaction to make a melee attack against the creature, doing fighting damage on a successful hit.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "DEX",
+    "STR"
+  ],
+  "Move Time": "1 reaction",
+  "PP": 5,
+  "Range": "Melee",
+  "Scaling": "Higher Levels: The damage dice roll for this move changes to 1d6 at level 5, 1d8 at level 10, and 2d6 at level 17.",
+  "Type": "Fighting",
+  "atk": true
+}

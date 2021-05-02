@@ -1,0 +1,35 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 2,
+      "dice_max": 6,
+      "move": false
+    },
+    "10": {
+      "amount": 2,
+      "dice_max": 6,
+      "move": false
+    },
+    "17": {
+      "amount": 2,
+      "dice_max": 6,
+      "move": false
+    },
+    "5": {
+      "amount": 2,
+      "dice_max": 6,
+      "move": false
+    }
+  },
+  "Description": "You use strength in numbers to attack a creature. Make a melee attack on a creature, and an additional attack for any other conscious creature your trainer is currently carrying, dealing dark damage on each hit.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "STR"
+  ],
+  "Move Time": "1 action",
+  "PP": 5,
+  "Range": "Melee",
+  "Scaling": "Higher Levels: The damage dice roll for this move changes to  at level 5,  at level 10, and  at level 17.",
+  "Type": "Dark",
+  "atk": true
+}

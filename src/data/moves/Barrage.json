@@ -1,0 +1,38 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 0,
+      "dice_max": 4,
+      "move": false
+    },
+    "10": {
+      "amount": 0,
+      "dice_max": 4,
+      "move": false,
+      "times": 2
+    },
+    "17": {
+      "amount": 0,
+      "dice_max": 6,
+      "move": false,
+      "times": 2
+    },
+    "5": {
+      "amount": 0,
+      "dice_max": 6,
+      "move": false
+    }
+  },
+  "Description": "Make a ranged attack on a creature, rolling on a hit. You attack with a barrage of ranged strikes equal to the number shown. Each projectile deals normal damage.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "STR",
+    "DEX"
+  ],
+  "Move Time": "1 action",
+  "PP": 10,
+  "Range": "30ft",
+  "Scaling": "Higher Levels: Each projectile that hits deals 1d6 at level 5, 2d4 at level 10, and 2d6 at level 17.",
+  "Type": "Normal",
+  "atk": true
+}

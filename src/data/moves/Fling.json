@@ -1,0 +1,13 @@
+{
+  "Description": "You sacrifice your held item to throw it a creature. Make a ranged attack. On a hit, the amount of dark damage dealt is equal to the price of the item in the manual, divided by 100 (rounded down), plus STAB (if applicable). After activating this move, on a hit or miss, the item disappears. In addition, certain items have additional effects on a successful hit with this move. After activating this move, on a hit or miss, the item disappears.\n\n| Item  | Effect |\n|:---:|:-----------:|\n|  Flame Orb  | Burns |\n|  Toxic Orb  | Badly Poisons |\n|  Light Ball  | Paralyzes|\n\n| Item    | Effect |\n|:---:|:-----------:|\n|  King's Rock  | Flinches |\n|  Razor Fang  | Flinches |\n|  Poison Barb  | Poisons |",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "STR",
+    "DEX"
+  ],
+  "Move Time": "1 action",
+  "PP": 5,
+  "Range": "60ft",
+  "Type": "Dark",
+  "atk": true
+}

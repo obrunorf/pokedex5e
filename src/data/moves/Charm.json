@@ -1,0 +1,14 @@
+{
+  "Description": "You attempt to charm a creature, sharply decreasing its attack. A target you choose in range must make a WIS save against your Move DC. On a fail, the target adds -2 to all attacks against you for the duration.",
+  "Duration": "1 minute",
+  "Move Power": [
+    "CHA",
+    "WIS"
+  ],
+  "Move Time": "1 action",
+  "PP": 10,
+  "Range": "80ft",
+  "Save": "WIS",
+  "Scaling": "Higher Levels: The target adds -3 at level 5, -4 at level 10, and -5 at level 17.",
+  "Type": "Fairy"
+}

@@ -1,0 +1,35 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 2,
+      "dice_max": 6,
+      "move": true
+    },
+    "10": {
+      "amount": 4,
+      "dice_max": 6,
+      "move": true
+    },
+    "17": {
+      "amount": 6,
+      "dice_max": 6,
+      "move": true
+    },
+    "5": {
+      "amount": 2,
+      "dice_max": 8,
+      "move": true
+    }
+  },
+  "Description": "You summon forth a plume of raging hot fire in a 5 foot radius, 40-foot cylinder, centered on a point within range. Creatures in the blast must make a DEX save against your Move DC, taking fire damage on a failure and becoming burned, or half as much without becoming burned on a success.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "STR"
+  ],
+  "Move Time": "1 action",
+  "PP": 5,
+  "Range": "40ft",
+  "Save": "DEX",
+  "Scaling": "Higher Levels: The damage dice roll for this move changes to 2d8 at level 5, 4d6 at level 10, and 6d6 at level 17.",
+  "Type": "Fire"
+}

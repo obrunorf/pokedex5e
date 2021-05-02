@@ -1,0 +1,35 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 1,
+      "dice_max": 6,
+      "move": true
+    },
+    "10": {
+      "amount": 4,
+      "dice_max": 4,
+      "move": true
+    },
+    "17": {
+      "amount": 3,
+      "dice_max": 10,
+      "move": true
+    },
+    "5": {
+      "amount": 2,
+      "dice_max": 6,
+      "move": true
+    }
+  },
+  "Description": "You punch twice with two devastating slams of your fist. Make two melee attack rolls, doing steel damage on each successful hit. If any natural attack roll is 16 or higher, the target flinches.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "STR"
+  ],
+  "Move Time": "1 action",
+  "PP": 5,
+  "Range": "Melee",
+  "Scaling": "Higher Levels: The damage dice rolls for this move changes to 2d6 at level 5, 4d4 at level 10, and 3d10 at level 17.",
+  "Type": "Steel",
+  "atk": true
+}

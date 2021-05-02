@@ -1,0 +1,36 @@
+{
+  "Damage": {
+    "1": {
+      "amount": 2,
+      "dice_max": 8,
+      "move": true
+    },
+    "10": {
+      "amount": 3,
+      "dice_max": 10,
+      "move": true
+    },
+    "17": {
+      "amount": 4,
+      "dice_max": 12,
+      "move": true
+    },
+    "5": {
+      "amount": 2,
+      "dice_max": 10,
+      "move": true
+    }
+  },
+  "Description": "You exhale a wave of hot breath in a 30ft. circle, centered on you. Creatures caught in the area must make a DEX save against your Move DC, taking fire damage on failure, or half as much on a success. If the creature fails the save by 5 or more, it is burned.",
+  "Duration": "Instantaneous",
+  "Move Power": [
+    "DEX",
+    "CON"
+  ],
+  "Move Time": "1 action",
+  "PP": 10,
+  "Range": "Self (15ft radius)",
+  "Save": "DEX",
+  "Scaling": "Higher Levels: The damage dice roll for this move changes to 2d10 at level 5, 3d10 at level 10, and 4d12 at level 17.",
+  "Type": "Fire"
+}
