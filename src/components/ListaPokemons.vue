@@ -1,22 +1,13 @@
 <template>
   <div>
-    <li v-for="(name, number) in pokemonsObj" v-bind:key="number">
+    <li v-for="(name, number) in pokemonsGlobal" v-bind:key="number">
       {{ number }} - {{ name }}</li>
   </div>
 </template>
 
-<script>
+<script setup>
 import pokemons from "../data/index_order.json";
-export default {
-  data() {
-    return {
-      pokemons: MY_JSON,
-    };
-  },
-};
-console.log(pokemons);
-
-let pokemonsObj = [{}];
+const pokemonsGlobal = [];
 
 for (let i = 0; i < Object.keys(pokemons).length; i++) {
   if (pokemons[i] !== undefined) {
@@ -24,15 +15,14 @@ for (let i = 0; i < Object.keys(pokemons).length; i++) {
       number: i + 1,
       name: pokemons[i][0],
     };
-    pokemonsObj.push(p);
+    pokemonsGlobal.push(p);
   }
 }
-console.log(pokemonsObj);
+
 </script>
 
-<script setup>
-import { defineProps, reactive } from "vue";
-</script>
+
+
 
 <style scoped>
 a {
