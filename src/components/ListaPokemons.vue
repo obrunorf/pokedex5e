@@ -6,6 +6,7 @@
       v-bind:key="pokemon"
       @click="state.pokemonSelecionado = pokemon.name"
     >
+    
       <div>
         <div>#{{ pokemon.number }}</div>
         <div class="flex justify-center">
