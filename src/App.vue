@@ -1,10 +1,10 @@
 <template>
-  <div class="grid grid-cols-3">
+  <div class="grid grid-cols-3 font-mono">
     <div>
       <lista-pokemons :state="state" />
     </div>
     <div class="col-span-2">
-      <pokemon-detalhe :key="state.pokemonSelecionado" :pokemon="getPokemon(state.pokemonSelecionado)" />
+      <pokemon-detalhe  :key="state.pokemonSelecionado" :pokemon="getPokemon(state.pokemonSelecionado)" />
     </div>
   </div>
 </template>

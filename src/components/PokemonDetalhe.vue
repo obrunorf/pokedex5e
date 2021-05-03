@@ -3,8 +3,9 @@
     <h1>Nenhum pokemão selecionado!</h1>
   </div>
   <div v-else>
-    <h1>{{ pokemon.name }}</h1>
-    <div><PokemonTipo :types="pokemon.Type" /></div>
+    <h1 class="text-3xl font-extrabold">{{ pokemon.name }} #{{pokemon.index}}</h1>         
+    <div><span class="font-bold"> Classification:</span> {{pokemon.size}} | <span class="font-bold">SR:</span>{{pokemon.SR}} </div> 
+    <div><span class="font-bold">Minumum Level Found:</span> {{pokemon["MIN LVL FD"]}} </div>  
     <div>
       <img
         class="h-48"
@@ -15,18 +16,10 @@
         "
       />
     </div>
-    <div> AC: {{pokemon.AC}} </div>
-    <div class="grid grid-cols-6">
-      <div class="row">
-        <div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHAR</div>
-      </div>
-      <div class="row">
-        <div><PokemonAtributo :attributes="pokemon.attributes"></div>
-      </div>
-    </div>
-
-
-
+    <div><PokemonTipo :types="pokemon.Type" /></div>
+    <div><span class="font-bold">Armor Class:</span> {{pokemon.AC}} </div>          
+    <div><span class="font-bold">Hit Points:</span> {{pokemon.HP}} | <span class="font-bold">Hit Dice</span> d{{pokemon["Hit Dice"]}}</div>          
+        <div><PokemonAtributo :attributes="pokemon.attributes"/></div>
   </div>
 </template>
 
