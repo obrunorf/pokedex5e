@@ -1,8 +1,25 @@
 <template>
-  <div>
-    <li v-for="(pokemon) in pokemonsGlobal" v-bind:key="pokemon" class="flex"
+  <div class="space-y-5">
+    <div
+      class="grid grid-cols-3 max-w-sm rounded overflow-hidden auto-cols-min cursor-pointer"
+      v-for="pokemon in pokemonsGlobal"
+      v-bind:key="pokemon"
+      @click="state.pokemonSelecionado = pokemon.name"
     >
-      {{ pokemon.number }} - {{ pokemon.name }} - <PokemonTipo :types="pokemon.type"/> - SR: {{ pokemon.sr }}</li>
+      <div>
+        <div>#{{ pokemon.number }}</div>
+        <div class="flex justify-center">
+          <img :src="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/' + pokemon.number + '.png'"/>
+        </div>
+      </div>
+      <div>
+        <div class="flex font-bold">
+          <div class="mr-2 flex items-center">{{ pokemon.name }}</div>             
+        </div>   
+        <div><PokemonTipo :types="pokemon.type" /></div>             
+        <div class="flex text-xs">SR: {{ pokemon.sr }}</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -23,6 +40,11 @@ for (let i = 0; i < Object.keys(pokemons).length; i++) {
     pokemonsGlobal.push(p);
   }
 }
+
+import { defineProps } from 'vue'
+defineProps({
+  state: Object
+})
 
 </script>
 
