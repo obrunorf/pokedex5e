@@ -1,37 +1,20 @@
 <template>
-    
+  <div v-if="!pokemon">
+    <h1>Nenhum pokemão selecionado!</h1>
+  </div>
+  <div v-else>
+    <h1>{{ pokemon.name }}</h1>
+  </div>
 </template>
 
 <script setup>
-import PokemonTipo from './PokemonTipo.vue'
+import PokemonTipo from "./PokemonTipo.vue";
 
-import pokemonsImportados from "../data/pokemons_combinado_completo.json";
-console.log(pokemonsImportados);
-if (pokemonProp != undefined) { 
-pokemonImportado = pokemonsImportados.find(p => p.name === pokemonProp)};
-
-const pokemon = {
-    name: p.name,
-    // ac: pokemonImportado.AC,
-    // abilities: pokemonImportado.Abilities,
-    // hp: pokemonImportado.HP,
-    // hiddenAbility: pokemonImportado["Hidden Ability"],
-    // minLvlFnd: pokemonImportado["MIN LVL FD"],
-    type: pokemonImportado.Type
-};
-
-
-import { defineProps, reactive } from "vue";
+import { defineProps } from 'vue'
 defineProps({
-  pokemonProp: String,
-});
+  pokemon: Object
+})
 </script>
 
-
-
-
 <style scoped>
-a {
-  color: #42b983;
-}
 </style>

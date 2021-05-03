@@ -1,19 +1,26 @@
 <template>
- <h1>State: {{state}}</h1>
-  <div class="grid-cols-3">
+  <div class="grid grid-cols-3">
     <div>
       <lista-pokemons :state="state" />
     </div>
-    <div class="col-span-2"></div>
-      <pokemon-detalhe v-if="state && state.pokemonSelecionado" :pokemonProp="state.pokemonSelecionado"/>
+    <div class="col-span-2">
+      <pokemon-detalhe :key="state.pokemonSelecionado" :pokemon="getPokemon(state.pokemonSelecionado)" />
+    </div>
   </div>
 </template>
 
 <script setup>
 import ListaPokemons from "./components/ListaPokemons.vue";
 import PokemonDetalhe from "./components/PokemonDetalhe.vue";
-import { reactive } from 'vue';
-const state = reactive({ pokemonSelecionado: undefined })
+import pokemonsImportados from "./data/pokemons_combinado_completo.json";
+import { reactive } from "vue";
+const state = reactive({ pokemonSelecionado: undefined });
+
+function getPokemon(pokemonName) {
+   return pokemonsImportados.find(
+        (p) => p.name === pokemonName
+      );
+}
 
 // This starter template is using Vue 3 experimental <script setup> SFCs
 // Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
