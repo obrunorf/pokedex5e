@@ -1,7 +1,7 @@
 <template>
-  <div class="grid grid-cols-3 font-mono">
+  <div class="grid grid-cols-3 font-mono m-12">
     <div>
-      <lista-pokemons :state="state" />
+      <lista-pokemons :parentState="state" />
     </div>
     <div class="col-span-2">
       <pokemon-detalhe  :key="state.pokemonSelecionado" :pokemon="getPokemon(state.pokemonSelecionado)" />
@@ -33,6 +33,5 @@ function getPokemon(pokemonName) {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
