@@ -1,32 +1,39 @@
 <template>
   <div>
-    <input type="text" v-model="searchPkmn" placeholder="pokemon name..." />
-  </div>
-  <div class="space-y-5">
-    <div
-      class="grid grid-cols-3 max-w-sm rounded overflow-hidden auto-cols-min cursor-pointer"
-      v-for="pokemon in filtrar()"
-      v-bind:key="pokemon.name"
-      @click="state.pokemonSelecionado = pokemon.name"
-    >
-      <div>
-        <div>#{{ pokemon.number }}</div>
-        <div class="flex justify-center">
-          <img
-            :src="
-              'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/' +
-              pokemon.number +
-              '.png'
-            "
-          />
+    <div>
+      <input
+        type="text"
+        v-model="state.searchPkmn"
+        class="border p-2 w-full m-2"
+        placeholder="pokemon name..."
+      />
+    </div>
+    <div class="space-y-5">
+      <div
+        class="grid grid-cols-3 max-w-sm rounded overflow-hidden auto-cols-min cursor-pointer"
+        v-for="pokemon in filtrar(state.searchPkmn)"
+        v-bind:key="pokemon.name"
+        @click="parentState.pokemonSelecionado = pokemon.name"
+      >
+        <div>
+          <div>#{{ pokemon.number }}</div>
+          <div class="flex justify-center">
+            <img
+              :src="
+                'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/' +
+                pokemon.number +
+                '.png'
+              "
+            />
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="flex font-bold">
-          <div class="mr-2 flex items-center">{{ pokemon.name }}</div>
+        <div>
+          <div class="flex font-bold">
+            <div class="mr-2 flex items-center">{{ pokemon.name }}</div>
+          </div>
+          <div><PokemonTipo :types="pokemon.type" /></div>
+          <div class="flex text-xs">SR: {{ pokemon.sr }}</div>
         </div>
-        <div><PokemonTipo :types="pokemon.type" /></div>
-        <div class="flex text-xs">SR: {{ pokemon.sr }}</div>
       </div>
     </div>
   </div>
@@ -37,7 +44,8 @@ import PokemonTipo from "./PokemonTipo.vue";
 import pokemons from "../data/index_order.json";
 import filtros from "../data/filter_data.json";
 const pokemonsGlobal = [];
-let searchPkmn = "";
+import { reactive, defineProps } from "vue";
+const state = reactive({ searchPkmn: "" });
 
 for (let i = 0; i < Object.keys(pokemons).length; i++) {
   if (pokemons[i] !== undefined) {
@@ -51,36 +59,20 @@ for (let i = 0; i < Object.keys(pokemons).length; i++) {
   }
 }
 
-// function filtrar(pokemonsG) {
-//   if (searchPkmn != '' )
-//   return pokemonsG.filter(
-//     (p) => p.name.toLowerCase() === searchPkmn.toLowerCase()
-//   )
-//   else return pokemonsG;
-// }
+function filtrar(pokemonFilter) {
+  if (pokemonFilter != "") {
+    pokemonFilter = pokemonFilter.toLowerCase();
+    return pokemonsGlobal.filter((p) =>
+      p.name.toLowerCase().startsWith(pokemonFilter)
+    );
+  } else {
+    return pokemonsGlobal;
+  }
+}
 
-import { defineProps } from "vue";
 defineProps({
-  state: Object,
+  parentState: Object,
 });
-
-const vm = Vue.createApp({
-  data() {
-    return {
-      pokebons: pokemonsGlobal
-    };
-  },
-  methods: {
-    filtrar() {
-      if (searchPkmn != "")
-        return pokebons.filter(
-          (p) => p.name.toLowerCase() === searchPkmn.toLowerCase()
-        );
-      else return pokebons;
-    },
-  },
-}).mount("#app");
-
 </script>
 
 
