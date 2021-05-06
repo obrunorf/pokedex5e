@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="overflow-y-auto" style="max-height: 89vh">
     <div>
       <input
         type="text"
         v-model="state.searchPkmn"
-        class="border p-2 w-full m-2"
-        placeholder="pokemon name..."
+        class="border p-2 m-2 w-4/5"
+        placeholder="pokemon name, type or SR..."
       />
     </div>
     <div class="space-y-5">
@@ -59,15 +59,27 @@ for (let i = 0; i < Object.keys(pokemons).length; i++) {
   }
 }
 
-function filtrar(pokemonFilter) {
-  if (pokemonFilter != "") {
-    pokemonFilter = pokemonFilter.toLowerCase();
+function filtrar(pokemonFilter) {  
+  if (pokemonFilter != "" ) {
+    pokemonFilter = pokemonFilter.toLowerCase();  
+    const pokemonFilterC = pokemonFilter.charAt(0).toUpperCase() + pokemonFilter.slice(1);
     return pokemonsGlobal.filter((p) =>
-      p.name.toLowerCase().startsWith(pokemonFilter)
+      p.name.toLowerCase().includes(pokemonFilter)
+      ||      
+      contemTipo(pokemonFilterC, p.type)      
+      ||
+      +p.sr === +pokemonFilter
     );
   } else {
     return pokemonsGlobal;
   }
+}
+
+function contemTipo(busca,tipos){
+ if (tipos[0].includes(busca) || (tipos[1]!=undefined && tipos[1].includes(busca)))
+ return true;
+ else
+   return false;
 }
 
 defineProps({
@@ -79,5 +91,25 @@ defineProps({
 <style scoped>
 a {
   color: #42b983;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 </style>

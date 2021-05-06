@@ -1,10 +1,10 @@
 <template>
-  <div class="grid grid-cols-3 font-mono m-12">
+  <div class="grid grid-cols-4 font-mono m-12">
     <div>
       <lista-pokemons :parentState="state" />
     </div>
     <div class="col-span-2">
-      <pokemon-detalhe  :key="state.pokemonSelecionado" :pokemon="getPokemon(state.pokemonSelecionado)" />
+      <pokemon-detalhe  :key="state.pokemonSelecionado" :pokemon="getPokemon(state.pokemonSelecionado)" :abilities="pokemonsAbilities" />
     </div>
   </div>
 </template>
@@ -13,6 +13,7 @@
 import ListaPokemons from "./components/ListaPokemons.vue";
 import PokemonDetalhe from "./components/PokemonDetalhe.vue";
 import pokemonsImportados from "./data/pokemons_combinado_completo.json";
+import pokemonsAbilities from "./data/abilities.json";
 import { reactive } from "vue";
 const state = reactive({ pokemonSelecionado: undefined });
 
@@ -31,7 +32,7 @@ function getPokemon(pokemonName) {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
 }
 </style>
