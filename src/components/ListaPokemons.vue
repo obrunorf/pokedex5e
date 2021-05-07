@@ -1,14 +1,14 @@
 <template>
-  <div class="overflow-y-auto" style="max-height: 89vh">
-    <div>
-      <input
-        type="text"
-        v-model="state.searchPkmn"
-        class="border p-2 m-2 w-4/5"
-        placeholder="pokemon name, type or SR..."
-      />
-    </div>
-    <div class="space-y-5">
+  <div>
+    <input
+      type="text"
+      v-model="state.searchPkmn"
+      class="border p-2 m-2 w-4/5"
+      placeholder="pokemon name, type or SR..."
+    />
+  </div>
+  <div class="overflow-y-auto" style="max-height: 83vh">
+    <div class="space-y-4">
       <div
         class="grid grid-cols-3 max-w-sm rounded overflow-hidden auto-cols-min cursor-pointer"
         v-for="pokemon in filtrar(state.searchPkmn)"
@@ -59,27 +59,29 @@ for (let i = 0; i < Object.keys(pokemons).length; i++) {
   }
 }
 
-function filtrar(pokemonFilter) {  
-  if (pokemonFilter != "" ) {
-    pokemonFilter = pokemonFilter.toLowerCase();  
-    const pokemonFilterC = pokemonFilter.charAt(0).toUpperCase() + pokemonFilter.slice(1);
-    return pokemonsGlobal.filter((p) =>
-      p.name.toLowerCase().includes(pokemonFilter)
-      ||      
-      contemTipo(pokemonFilterC, p.type)      
-      ||
-      +p.sr === +pokemonFilter
+function filtrar(pokemonFilter) {
+  if (pokemonFilter != "") {
+    pokemonFilter = pokemonFilter.toLowerCase();
+    const pokemonFilterC =
+      pokemonFilter.charAt(0).toUpperCase() + pokemonFilter.slice(1);
+    return pokemonsGlobal.filter(
+      (p) =>
+        p.name.toLowerCase().includes(pokemonFilter) ||
+        contemTipo(pokemonFilterC, p.type) ||
+        +p.sr === +pokemonFilter
     );
   } else {
     return pokemonsGlobal;
   }
 }
 
-function contemTipo(busca,tipos){
- if (tipos[0].includes(busca) || (tipos[1]!=undefined && tipos[1].includes(busca)))
- return true;
- else
-   return false;
+function contemTipo(busca, tipos) {
+  if (
+    tipos[0].includes(busca) ||
+    (tipos[1] != undefined && tipos[1].includes(busca))
+  )
+    return true;
+  else return false;
 }
 
 defineProps({

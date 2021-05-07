@@ -4,7 +4,7 @@
       <lista-pokemons :parentState="state" />
     </div>
     <div class="col-span-2">
-      <pokemon-detalhe  :key="state.pokemonSelecionado" :pokemon="getPokemon(state.pokemonSelecionado)" :abilities="pokemonsAbilities" />
+      <pokemon-detalhe  :key="state.pokemonSelecionado" :pokemon="getPokemon(state.pokemonSelecionado)" :abilities="pokemonsAbilities" :evos="pokemonsEvos"/>
     </div>
   </div>
 </template>
@@ -14,6 +14,7 @@ import ListaPokemons from "./components/ListaPokemons.vue";
 import PokemonDetalhe from "./components/PokemonDetalhe.vue";
 import pokemonsImportados from "./data/pokemons_combinado_completo.json";
 import pokemonsAbilities from "./data/abilities.json";
+import pokemonsEvos from "./data/evolve.json";
 import { reactive } from "vue";
 const state = reactive({ pokemonSelecionado: undefined });
 

@@ -762,7 +762,7 @@
       "Run Away",
       "Pickup"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 25,
     "Hidden Ability": "Skill Link",
     "Hit Dice": 8,
@@ -1324,7 +1324,7 @@
       "Technician",
       "Pickup"
     ],
-    "Climbing Speed": 40,
+    "CSp": 40,
     "HP": 94,
     "Hidden Ability": "Skill Link",
     "Hit Dice": 10,
@@ -2310,7 +2310,7 @@
     "Abilities": [
       "Defeatist"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "Evolve": {
       "into": [
         "Archeops"
@@ -2430,7 +2430,7 @@
     "Abilities": [
       "Defeatist"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Fsp": 25,
     "HP": 98,
     "Hit Dice": 12,
@@ -2533,7 +2533,7 @@
       "Swarm",
       "Insomnia"
     ],
-    "Climbing Speed": 35,
+    "CSp": 35,
     "HP": 55,
     "Hidden Ability": "Sniper",
     "Hit Dice": 10,
@@ -4812,7 +4812,7 @@
     "Abilities": [
       "Swarm"
     ],
-    "Climbing Speed": 10,
+    "CSp": 10,
     "Fsp": 30,
     "HP": 45,
     "Hidden Ability": "Rivalry",
@@ -4904,7 +4904,7 @@
     "Abilities": [
       "Swarm"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Fsp": 30,
     "HP": 47,
     "Hidden Ability": "Sniper",
@@ -7849,7 +7849,7 @@
     "Abilities": [
       "Swift Swim"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Evolve": {
       "into": [
         "Floatzel"
@@ -8215,7 +8215,7 @@
       "Pickup",
       "Cheek Pouch"
     ],
-    "Burrowing Speed": 20,
+    "BSp": 20,
     "Evolve": {
       "into": [
         "Diggersby"
@@ -8334,7 +8334,7 @@
     "Abilities": [
       "Shed Skin"
     ],
-    "Climbing Speed": 10,
+    "CSp": 10,
     "Evolve": {
       "into": [
         "Wormadam",
@@ -8400,7 +8400,7 @@
     "Abilities": [
       "Compound Eyes"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Fsp": 30,
     "HP": 38,
     "Hidden Ability": "Tinted Lens",
@@ -8502,7 +8502,7 @@
     "Abilities": [
       "Beast Boost"
     ],
-    "Climbing Speed": 40,
+    "CSp": 40,
     "Fsp": 40,
     "HP": 246,
     "Hit Dice": 12,
@@ -9031,7 +9031,7 @@
     "Abilities": [
       "Levitate"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "HP": 54,
     "Hit Dice": 10,
     "MIN LVL FD": 5,
@@ -9541,7 +9541,7 @@
     "Abilities": [
       "Shield Dust"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Evolve": {
       "into": [
         "Metapod"
@@ -11075,7 +11075,7 @@
     "Abilities": [
       "Blaze"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Monferno"
@@ -11527,7 +11527,7 @@
       "Cute Charm",
       "Technician"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 50,
     "Hidden Ability": "Skill Link",
     "Hit Dice": 10,
@@ -12640,7 +12640,7 @@
     "Abilities": [
       "Honey Gather"
     ],
-    "Climbing Speed": 10,
+    "CSp": 10,
     "Evolve": {
       "into": [
         "Vespiquen"
@@ -14467,7 +14467,7 @@
       "Sturdy",
       "Shell Armor"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "HP": 55,
     "Hidden Ability": "Weak Armor",
     "Hit Dice": 12,
@@ -16011,7 +16011,7 @@
       "Cute Charm",
       "Normalize"
     ],
-    "Climbing Speed": 35,
+    "CSp": 35,
     "HP": 45,
     "Hidden Ability": "Wonder Skin",
     "Hit Dice": 8,
@@ -17021,7 +17021,7 @@
       "Pickup",
       "Cheek Pouch"
     ],
-    "Burrowing Speed": 25,
+    "BSp": 25,
     "HP": 57,
     "Hidden Ability": "Huge Power",
     "Hit Dice": 10,
@@ -17134,7 +17134,7 @@
       "Sand Veil",
       "Arena Trap"
     ],
-    "Burrowing Speed": 20,
+    "BSp": 20,
     "Evolve": {
       "into": [
         "Dugtrio"
@@ -18236,7 +18236,7 @@
       "Battle Armor",
       "Sniper"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "HP": 55,
     "Hidden Ability": "Keen Eye",
     "Hit Dice": 10,
@@ -18695,7 +18695,7 @@
       "Sand Rush",
       "Sand Force"
     ],
-    "Burrowing Speed": 30,
+    "BSp": 30,
     "Evolve": {
       "into": [
         "Excadrill"
@@ -19175,7 +19175,7 @@
       "Sand Veil",
       "Arena Trap"
     ],
-    "Burrowing Speed": 30,
+    "BSp": 30,
     "HP": 55,
     "Hidden Ability": "Sand Force",
     "Hit Dice": 10,
@@ -19360,7 +19360,7 @@
       "Serene Grace",
       "Run Away"
     ],
-    "Burrowing Speed": 20,
+    "BSp": 20,
     "Fsp": 10,
     "HP": 20,
     "Hidden Ability": "Rattled",
@@ -19605,7 +19605,7 @@
       "Swarm",
       "Hustle"
     ],
-    "Burrowing Speed": 25,
+    "BSp": 25,
     "HP": 48,
     "Hidden Ability": "Truant",
     "Hit Dice": 8,
@@ -20070,7 +20070,7 @@
     "Abilities": [
       "Shield Dust"
     ],
-    "Climbing Speed": 10,
+    "CSp": 10,
     "Fsp": 30,
     "HP": 50,
     "Hidden Ability": "Compound Eyes",
@@ -20167,7 +20167,7 @@
       "Sturdy",
       "Shell Armor"
     ],
-    "Climbing Speed": 10,
+    "CSp": 10,
     "Evolve": {
       "into": [
         "Crustle"
@@ -21485,7 +21485,7 @@
     "Abilities": [
       "Static"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Fsp": 30,
     "HP": 34,
     "Hidden Ability": "Motor Drive",
@@ -21986,7 +21986,7 @@
       "Keen Eye",
       "Infiltrator"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "Evolve": {
       "current_stage": 1,
       "total_stages": 2,
@@ -22097,7 +22097,7 @@
       "Sand Rush",
       "Sand Force"
     ],
-    "Burrowing Speed": 40,
+    "BSp": 40,
     "HP": 80,
     "Hidden Ability": "Mold Breaker",
     "Hit Dice": 10,
@@ -23240,7 +23240,7 @@
     "Abilities": [
       "Iron Barbs"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "HP": 66,
     "Hidden Ability": "Anticipation",
     "Hit Dice": 12,
@@ -23964,7 +23964,7 @@
     "Abilities": [
       "Swift Swim"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 55,
     "Hidden Ability": "Water Veil",
     "Hit Dice": 10,
@@ -25322,7 +25322,7 @@
       "Run Away",
       "Keen Eye"
     ],
-    "Climbing Speed": 35,
+    "CSp": 35,
     "HP": 45,
     "Hidden Ability": "Frisk",
     "Hit Dice": 10,
@@ -25426,7 +25426,7 @@
     "Abilities": [
       "Sand Veil"
     ],
-    "Burrowing Speed": 30,
+    "BSp": 30,
     "Evolve": {
       "into": [
         "Garchomp"
@@ -25657,7 +25657,7 @@
       "Compound Eyes",
       "Unnerve"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 50,
     "Hidden Ability": "Swarm",
     "Hit Dice": 10,
@@ -25850,7 +25850,7 @@
     "Abilities": [
       "Sand Veil"
     ],
-    "Burrowing Speed": 40,
+    "BSp": 40,
     "Fsp": 40,
     "HP": 126,
     "Hidden Ability": "Rough Skin",
@@ -26199,7 +26199,7 @@
       "Sticky Hold",
       "Storm Drain"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "HP": 71,
     "Hidden Ability": "Sand Force",
     "Hit Dice": 12,
@@ -26746,7 +26746,7 @@
     "Abilities": [
       "Sand Veil"
     ],
-    "Burrowing Speed": 20,
+    "BSp": 20,
     "Evolve": {
       "into": [
         "Gabite"
@@ -27397,7 +27397,7 @@
       "Limber",
       "Own Tempo"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Evolve": {
       "into": [
         "Purugly"
@@ -27520,7 +27520,7 @@
       "Hyper Cutter",
       "Sand Veil"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Fsp": 30,
     "HP": 18,
     "Hidden Ability": "Immunity",
@@ -27651,7 +27651,7 @@
       "Hyper Cutter",
       "Sand Veil"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Fsp": 40,
     "HP": 80,
     "Hidden Ability": "Poison Heal",
@@ -30485,7 +30485,7 @@
     "Abilities": [
       "Overgrow"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Evolve": {
       "into": [
         "Sceptile"
@@ -32199,7 +32199,7 @@
     "Abilities": [
       "Flash Fire"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 486,
     "Hidden Ability": "Flame Body",
     "Hit Dice": 20,
@@ -32501,7 +32501,7 @@
       "Swarm",
       "Guts"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Fsp": 20,
     "HP": 50,
     "Hidden Ability": "Moxie",
@@ -32723,7 +32723,7 @@
     "Abilities": [
       "Sand Stream"
     ],
-    "Burrowing Speed": 20,
+    "BSp": 20,
     "Evolve": {
       "into": [
         "Hippowdon"
@@ -32832,7 +32832,7 @@
     "Abilities": [
       "Sand Stream"
     ],
-    "Burrowing Speed": 25,
+    "BSp": 25,
     "HP": 66,
     "Hidden Ability": "Sand Force",
     "Hit Dice": 12,
@@ -34714,7 +34714,7 @@
       "Oblivious",
       "Tinted Lens"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Fsp": 25,
     "HP": 45,
     "Hidden Ability": "Prankster",
@@ -34826,7 +34826,7 @@
     "Abilities": [
       "Blaze"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 97,
     "Hidden Ability": "Intimidate",
     "Hit Dice": 12,
@@ -34941,7 +34941,7 @@
     "Abilities": [
       "Blaze"
     ],
-    "Climbing Speed": 40,
+    "CSp": 40,
     "HP": 102,
     "Hidden Ability": "Iron Fist",
     "Hit Dice": 12,
@@ -35815,7 +35815,7 @@
       "Compound Eyes",
       "Unnerve"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Galvantula"
@@ -36646,7 +36646,7 @@
       "Swarm",
       "Shed Skin"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Escavalier"
@@ -36840,7 +36840,7 @@
     "Abilities": [
       "Color Change"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "HP": 44,
     "Hidden Ability": "Protean",
     "Hit Dice": 8,
@@ -37864,7 +37864,7 @@
     "Abilities": [
       "Comatose"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "HP": 50,
     "Hit Dice": 10,
     "MIN LVL FD": 5,
@@ -38345,7 +38345,7 @@
       "Intimidate",
       "Moxie"
     ],
-    "Burrowing Speed": 30,
+    "BSp": 30,
     "Evolve": {
       "into": [
         "Krookodile"
@@ -38463,7 +38463,7 @@
       "Intimidate",
       "Moxie"
     ],
-    "Burrowing Speed": 30,
+    "BSp": 30,
     "HP": 117,
     "Hidden Ability": "Anger Point",
     "Hit Dice": 12,
@@ -39968,7 +39968,7 @@
       "Swarm",
       "Chlorophyll"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "HP": 88,
     "Hidden Ability": "Overcoat",
     "Hit Dice": 12,
@@ -40066,7 +40066,7 @@
       "Swarm",
       "Early Bird"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Fsp": 30,
     "HP": 50,
     "Hidden Ability": "Iron Fist",
@@ -40164,7 +40164,7 @@
       "Swarm",
       "Early Bird"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Ledian"
@@ -40518,7 +40518,7 @@
       "Limber",
       "Unburden"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 45,
     "Hidden Ability": "Prankster",
     "Hit Dice": 10,
@@ -40942,7 +40942,7 @@
       "Pickup",
       "Gluttony"
     ],
-    "Climbing Speed": 40,
+    "CSp": 40,
     "HP": 50,
     "Hidden Ability": "Quick Feet",
     "Hit Dice": 10,
@@ -44849,7 +44849,7 @@
       "Vital Spirit",
       "Anger Point"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Evolve": {
       "into": [
         "Primeape"
@@ -46065,7 +46065,7 @@
     "Abilities": [
       "Intimidate"
     ],
-    "Climbing Speed": 10,
+    "CSp": 10,
     "Fsp": 30,
     "HP": 50,
     "Hidden Ability": "Unnerve",
@@ -46920,7 +46920,7 @@
       "Keen Eye",
       "Infiltrator"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "HP": 58,
     "Hidden Ability": "Competitive",
     "Hit Dice": 10,
@@ -47031,7 +47031,7 @@
       "Keen Eye",
       "Infiltrator"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "HP": 58,
     "Hidden Ability": "Prankster",
     "Hit Dice": 10,
@@ -47142,7 +47142,7 @@
       "Pickup",
       "Technician"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Evolve": {
       "into": [
         "Persian"
@@ -48828,7 +48828,7 @@
       "Cute Charm",
       "Technician"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Cinccino"
@@ -49482,7 +49482,7 @@
     "Abilities": [
       "Blaze"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Evolve": {
       "into": [
         "Infernape"
@@ -49704,7 +49704,7 @@
     "Abilities": [
       "Swarm"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "Fsp": 30,
     "HP": 45,
     "Hidden Ability": "Tinted Lens",
@@ -52064,7 +52064,7 @@
     "Abilities": [
       "Compound Eyes"
     ],
-    "Climbing Speed": 10,
+    "CSp": 10,
     "Evolve": {
       "into": [
         "Ninjask",
@@ -52325,7 +52325,7 @@
     "Abilities": [
       "Speed Boost"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Fsp": 40,
     "HP": 40,
     "Hidden Ability": "Infiltrator",
@@ -53006,7 +53006,7 @@
       "Chlorophyll",
       "Early Bird"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Shiftry"
@@ -53561,7 +53561,7 @@
       "Rock Head",
       "Sturdy"
     ],
-    "Burrowing Speed": 25,
+    "BSp": 25,
     "Evolve": {
       "into": [
         "Steelix"
@@ -53695,7 +53695,7 @@
       "Inner Focus",
       "Telepathy"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "HP": 90,
     "Hidden Ability": "Symbiosis",
     "Hit Dice": 12,
@@ -54066,7 +54066,7 @@
       "Run Away",
       "Pickup"
     ],
-    "Climbing Speed": 35,
+    "CSp": 35,
     "HP": 20,
     "Hidden Ability": "Volt Absorb",
     "Hit Dice": 8,
@@ -54280,7 +54280,7 @@
     "Abilities": [
       "Water Compaction"
     ],
-    "Burrowing Speed": 25,
+    "BSp": 25,
     "HP": 89,
     "Hidden Ability": "Sand Veil",
     "Hit Dice": 12,
@@ -54472,7 +54472,7 @@
       "Iron Fist",
       "Mold Breaker"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "Evolve": {
       "into": [
         "Pangoro"
@@ -54592,7 +54592,7 @@
       "Iron Fist",
       "Mold Breaker"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "HP": 101,
     "Hidden Ability": "Scrappy",
     "Hit Dice": 12,
@@ -54711,7 +54711,7 @@
     "Abilities": [
       "Gluttony"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Simipour"
@@ -54833,7 +54833,7 @@
     "Abilities": [
       "Gluttony"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Simisage"
@@ -54952,7 +54952,7 @@
     "Abilities": [
       "Gluttony"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Simisear"
@@ -55301,7 +55301,7 @@
     "Abilities": [
       "Receiver"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "HP": 82,
     "Hidden Ability": "Defiant",
     "Hit Dice": 12,
@@ -55749,7 +55749,7 @@
       "Limber",
       "Technician"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 40,
     "Hidden Ability": "Unnerve",
     "Hit Dice": 10,
@@ -55861,7 +55861,7 @@
               "Fur Coat",
               "Technician"
             ],
-            "Climbing Speed": 40,
+            "CSp": 40,
             "Hidden Ability": "Rattled",
             "Moves": {
               "Level": {
@@ -56297,7 +56297,7 @@
     "Abilities": [
       "Beast Boost"
     ],
-    "Climbing Speed": 40,
+    "CSp": 40,
     "Fsp": 50,
     "HP": 232,
     "Hit Dice": 12,
@@ -57530,7 +57530,7 @@
       "Hyper Cutter",
       "Mold Breaker"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 60,
     "Hidden Ability": "Moxie",
     "Hit Dice": 10,
@@ -59093,7 +59093,7 @@
       "Vital Spirit",
       "Anger Point"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 45,
     "Hidden Ability": "Defiant",
     "Hit Dice": 10,
@@ -59813,7 +59813,7 @@
       "Limber",
       "Unburden"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Liepard"
@@ -59938,7 +59938,7 @@
       "Thick Fat",
       "Own Tempo"
     ],
-    "Climbing Speed": 35,
+    "CSp": 35,
     "HP": 50,
     "Hidden Ability": "Defiant",
     "Hit Dice": 10,
@@ -61266,7 +61266,7 @@
       "Run Away",
       "Guts"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "HP": 45,
     "Hidden Ability": "Hustle",
     "Hit Dice": 10,
@@ -61470,7 +61470,7 @@
       "Run Away",
       "Guts"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Evolve": {
       "into": [
         "Raticate"
@@ -61691,7 +61691,7 @@
     "Abilities": [
       "Air Lock"
     ],
-    "Climbing Speed": 40,
+    "CSp": 40,
     "Fsp": 50,
     "HP": 380,
     "Hit Dice": 20,
@@ -64298,7 +64298,7 @@
     "Abilities": [
       "Corrosion"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Salazzle"
@@ -64412,7 +64412,7 @@
     "Abilities": [
       "Corrosion"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 72,
     "Hidden Ability": "Oblivious",
     "Hit Dice": 10,
@@ -64611,7 +64611,7 @@
       "Intimidate",
       "Moxie"
     ],
-    "Burrowing Speed": 25,
+    "BSp": 25,
     "Evolve": {
       "into": [
         "Krokorok"
@@ -64736,7 +64736,7 @@
     "Abilities": [
       "Sand Veil"
     ],
-    "Burrowing Speed": 15,
+    "BSp": 15,
     "Evolve": {
       "into": [
         "Sandslash"
@@ -64971,8 +64971,8 @@
     "Abilities": [
       "Sand Veil"
     ],
-    "Burrowing Speed": 25,
-    "Climbing Speed": 25,
+    "BSp": 25,
+    "CSp": 25,
     "HP": 50,
     "Hidden Ability": "Sand Rush",
     "Hit Dice": 10,
@@ -65153,7 +65153,7 @@
     "Abilities": [
       "Water Compaction"
     ],
-    "Burrowing Speed": 20,
+    "BSp": 20,
     "Evolve": {
       "into": [
         "Palossand"
@@ -65464,7 +65464,7 @@
       "Shield Dust",
       "Compound Eyes"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "Evolve": {
       "into": [
         "Spewpa"
@@ -65527,7 +65527,7 @@
     "Abilities": [
       "Overgrow"
     ],
-    "Climbing Speed": 35,
+    "CSp": 35,
     "HP": 92,
     "Hidden Ability": "Unburden",
     "Hit Dice": 12,
@@ -65734,7 +65734,7 @@
       "Poison Point",
       "Swarm"
     ],
-    "Climbing Speed": 35,
+    "CSp": 35,
     "HP": 75,
     "Hidden Ability": "Speed Boost",
     "Hit Dice": 12,
@@ -66806,7 +66806,7 @@
       "Run Away",
       "Keen Eye"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Evolve": {
       "into": [
         "Furret"
@@ -66930,7 +66930,7 @@
     "Abilities": [
       "Overgrow"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 107,
     "Hidden Ability": "Contrary",
     "Hit Dice": 12,
@@ -67024,7 +67024,7 @@
     "Abilities": [
       "Overgrow"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Serperior"
@@ -67246,7 +67246,7 @@
       "Swarm",
       "Chlorophyll"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "Evolve": {
       "into": [
         "Swadloon"
@@ -67894,7 +67894,7 @@
       "Sticky Hold",
       "Storm Drain"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "Evolve": {
       "into": [
         "Gastrodon"
@@ -68238,7 +68238,7 @@
       "Chlorophyll",
       "Early Bird"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 88,
     "Hidden Ability": "Pickpocket",
     "Hit Dice": 12,
@@ -69287,7 +69287,7 @@
     "Abilities": [
       "Gluttony"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 80,
     "Hidden Ability": "Torrent",
     "Hit Dice": 10,
@@ -69370,7 +69370,7 @@
     "Abilities": [
       "Gluttony"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 80,
     "Hidden Ability": "Overgrow",
     "Hit Dice": 10,
@@ -69450,7 +69450,7 @@
     "Abilities": [
       "Gluttony"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 80,
     "Hidden Ability": "Blaze",
     "Hit Dice": 10,
@@ -69863,7 +69863,7 @@
       "Cute Charm",
       "Normalize"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Evolve": {
       "into": [
         "Delcatty"
@@ -69999,7 +69999,7 @@
       "Battle Armor",
       "Sniper"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Evolve": {
       "into": [
         "Drapion"
@@ -70241,7 +70241,7 @@
       "Stench",
       "Aftermath"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "HP": 66,
     "Hidden Ability": "Keen Eye",
     "Hit Dice": 12,
@@ -70346,7 +70346,7 @@
     "Abilities": [
       "Truant"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 112,
     "Hit Dice": 12,
     "MIN LVL FD": 10,
@@ -70448,7 +70448,7 @@
     "Abilities": [
       "Truant"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Vigoroth"
@@ -71411,7 +71411,7 @@
       "Inner Focus",
       "Keen Eye"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "HP": 30,
     "Hidden Ability": "Pickpocket",
     "Hit Dice": 8,
@@ -71542,7 +71542,7 @@
     "Abilities": [
       "Overgrow"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Servine"
@@ -72576,7 +72576,7 @@
     "Abilities": [
       "Shed Skin"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "Evolve": {
       "into": [
         "Vivillon"
@@ -72751,7 +72751,7 @@
       "Swarm",
       "Insomnia"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Evolve": {
       "into": [
         "Ariados"
@@ -74160,7 +74160,7 @@
       "Rock Head",
       "Sturdy"
     ],
-    "Burrowing Speed": 30,
+    "BSp": 30,
     "HP": 147,
     "Hidden Ability": "Sheer Force",
     "Hit Dice": 12,
@@ -74687,7 +74687,7 @@
       "Stench",
       "Aftermath"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "Evolve": {
       "into": [
         "Skuntank"
@@ -75453,7 +75453,7 @@
       "Leaf Guard",
       "Chlorophyll"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Evolve": {
       "into": [
         "Leavanny"
@@ -79128,7 +79128,7 @@
     "Abilities": [
       "Blaze"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Evolve": {
       "into": [
         "Incineroar"
@@ -79972,7 +79972,7 @@
     "Abilities": [
       "Overgrow"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Evolve": {
       "into": [
         "Grovyle"
@@ -81869,7 +81869,7 @@
       "Guts",
       "Quick Feet"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "HP": 50,
     "Hidden Ability": "Unnerve",
     "Hit Dice": 12,
@@ -82464,7 +82464,7 @@
       "Poison Point",
       "Swarm"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Evolve": {
       "into": [
         "Whirlipede"
@@ -82879,7 +82879,7 @@
     "Abilities": [
       "Pressure"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "Fsp": 25,
     "HP": 55,
     "Hidden Ability": "Unnerve",
@@ -83081,7 +83081,7 @@
     "Abilities": [
       "Victory Star"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Fsp": 40,
     "HP": 246,
     "Hit Dice": 12,
@@ -83280,7 +83280,7 @@
     "Abilities": [
       "Vital Spirit"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Evolve": {
       "into": [
         "Slaking"
@@ -83669,7 +83669,7 @@
       "Shield Dust",
       "Compound Eyes"
     ],
-    "Climbing Speed": 10,
+    "CSp": 10,
     "Fsp": 25,
     "HP": 61,
     "Hidden Ability": "Friend Guard",
@@ -83770,7 +83770,7 @@
       "Illuminate",
       "Swarm"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Fsp": 25,
     "HP": 45,
     "Hidden Ability": "Prankster",
@@ -85053,7 +85053,7 @@
     "Abilities": [
       "Pressure"
     ],
-    "Burrowing Speed": 40,
+    "BSp": 40,
     "HP": 78,
     "Hidden Ability": "Pickpocket",
     "Hit Dice": 10,
@@ -85171,7 +85171,7 @@
     "Abilities": [
       "Shield Dust"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Evolve": {
       "into": [
         "Kakuna"
@@ -85511,7 +85511,7 @@
       "Poison Point",
       "Swarm"
     ],
-    "Climbing Speed": 25,
+    "CSp": 25,
     "Evolve": {
       "into": [
         "Scolipede"
@@ -86541,7 +86541,7 @@
     "Abilities": [
       "Anticipation"
     ],
-    "Climbing Speed": 15,
+    "CSp": 15,
     "HP": 50,
     "Hidden Ability": "Overcoat",
     "Hit Dice": 10,
@@ -86717,7 +86717,7 @@
     "Abilities": [
       "Shield Dust"
     ],
-    "Climbing Speed": 20,
+    "CSp": 20,
     "Evolve": {
       "into": [
         "Silcoon",
@@ -87356,7 +87356,7 @@
       "Speed Boost",
       "Tinted Lens"
     ],
-    "Climbing Speed": 30,
+    "CSp": 30,
     "Fsp": 40,
     "HP": 125,
     "Hidden Ability": "Frisk",
@@ -88088,7 +88088,7 @@
     "Abilities": [
       "Volt Absorb"
     ],
-    "Climbing Speed": 35,
+    "CSp": 35,
     "HP": 232,
     "Hit Dice": 12,
     "MIN LVL FD": 15,
@@ -88186,7 +88186,7 @@
       "Pickup",
       "Gluttony"
     ],
-    "Climbing Speed": 35,
+    "CSp": 35,
     "Evolve": {
       "into": [
         "Linoone"

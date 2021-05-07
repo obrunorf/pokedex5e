@@ -2,7 +2,7 @@
 <div v-for="ability in abilitiesPoke" v-bind:key="ability">
   <span class="font-bold">{{ ability }}: </span> <span class="italic">{{ getAbilityDesc(ability, abilities_file) }}</span>
 </div>
-<div v-if ="hidden !==''">
+<div v-if ="hidden">
   <span class="font-bold">{{ hidden }} (Hidden): </span> <span class="italic">{{ getAbilityDesc(hidden, abilities_file) }}</span>
 </div>
 
