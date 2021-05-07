@@ -37,6 +37,8 @@ import PokemonSpeeds from "./PokemonSpeeds.vue";
 import PokemonSenses from "./PokemonSenses.vue";
 import PokemonEvolution from "./PokemonEvolution.vue";
 
+
+
 function getHiddenAbility(pokemon){
   return pokemon["Hidden Ability"];
 }
