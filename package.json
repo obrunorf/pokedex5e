@@ -4,11 +4,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "start": "node server.js"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "fs": "0.0.1-security",
     "json-concat": "0.0.1",
+    "serve-static": "^1.14.1",
     "vue": "^3.0.5",
     "vue-simple-accordion": "^0.1.0"
   },
