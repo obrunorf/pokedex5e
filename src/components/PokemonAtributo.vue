@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
 
-    <table class="table-auto font-mono">
+    <table class="table-auto tracking-widest">
       <thead>
         <th>STR</th>
         <th>DEX</th>

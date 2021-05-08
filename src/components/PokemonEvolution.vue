@@ -1,5 +1,5 @@
 <template>
-  <div v-if="pokemon.Evolve">
+  <div v-if="pokemon.Evolve" class="tracking-tight">
     <!-- evolveable pkmn !-->
     <div>
       <span class="font-bold">Stage:</span>

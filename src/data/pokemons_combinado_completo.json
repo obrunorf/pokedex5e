@@ -51556,7 +51556,15 @@
       "Poison Point",
       "Rivalry"
     ],
-    "Evolve": "Nidorina",
+    "Evolve": {
+      "into": [
+        "Nidorina"
+      ],
+      "current_stage": 1,
+      "total_stages": 3,
+      "points": 5,
+      "level": 6
+    },
     "HP": 17,
     "Hidden Ability": "Hustle",
     "Hit Dice": 6,
@@ -51655,7 +51663,7 @@
       "Constitution"
     ],
     "size": "Tiny",
-    "name": "Nidoran-f"
+    "name": "Nidoran ♀"
   },
   {
     "AC": 12,
@@ -51663,7 +51671,15 @@
       "Poison Point",
       "Rivalry"
     ],
-    "Evolve": "Nidorino",
+    "Evolve": {
+      "into": [
+        "Nidorino"
+      ],
+      "current_stage": 1,
+      "total_stages": 3,
+      "points": 5,
+      "level": 6
+    },
     "HP": 17,
     "Hidden Ability": "Hustle",
     "Hit Dice": 6,
@@ -51758,7 +51774,7 @@
       "Constitution"
     ],
     "size": "Tiny",
-    "name": "Nidoran-m"
+    "name": "Nidoran ♂"
   },
   {
     "AC": 14,

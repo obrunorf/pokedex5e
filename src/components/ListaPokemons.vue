@@ -10,12 +10,12 @@
   <div class="overflow-y-auto" style="max-height: 83vh">
     <div class="space-y-4">
       <div
-        class="grid grid-cols-3 max-w-sm rounded overflow-hidden auto-cols-min cursor-pointer"
+        class="grid grid-cols-3 max-w-md mx-auto hover:bg-blue-200 rounded-lg overflow-hidden auto-cols-min cursor-pointer"
         v-for="pokemon in filtrar(state.searchPkmn)"
         v-bind:key="pokemon.name"
         @click="parentState.pokemonSelecionado = pokemon.name"
       >
-        <div>
+        <div class="p-2">
           <div>#{{ pokemon.number }}</div>
           <div class="flex justify-center">
             <img
