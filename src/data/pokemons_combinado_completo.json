@@ -49176,6 +49176,15 @@
     "HP": 40,
     "Hit Dice": 8,
     "MIN LVL FD": 5,
+    "Evolve": {
+      "into": [
+        "Mismagius"
+      ],
+      "current_stage": 1,
+      "total_stages": 2,
+      "points": 9,
+      "level": 10
+    },
     "Moves": {
       "Level": {
         "10": [
@@ -57337,6 +57346,15 @@
     ],
     "HP": 80,
     "Hidden Ability": "Thick Fat",
+    "Evolve": {
+      "into": [
+        "Mamoswine"
+      ],
+      "current_stage": 2,
+      "total_stages": 3,
+      "points": 10,
+      "level": 10
+    },
     "Hit Dice": 12,
     "MIN LVL FD": 8,
     "Moves": {

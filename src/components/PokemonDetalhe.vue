@@ -48,6 +48,7 @@
           </div>
           <div><PokemonAtributo :attributes="pokemon.attributes" /></div>
           <div><PokemonSkillsSaves :pokemon="pokemon" /></div>
+          <div><TypeRelations :types="pokemon.Type" /></div>
         </div>
         <!-- fim da coluna 1 -->
         <!-- coluna 2 moves -->
@@ -196,6 +197,7 @@ import PokemonSkillsSaves from "./PokemonSkillsSaves.vue";
 import PokemonEvolution from "./PokemonEvolution.vue";
 import PokemonMoveGroup from "./PokemonMoveGroup.vue";
 import PokemonTm2 from "./PokemonTm2.vue";
+import TypeRelations from "./TypeRelations.vue";
 
 import { reactive } from "vue";
 
