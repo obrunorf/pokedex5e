@@ -19,15 +19,20 @@
             {{ pokemon["MIN LVL FD"] }}
           </div>
           <div><PokemonEvolution :pokemon="pokemon" :evos="evos" /></div>
-          <div>
-            <img
-              class="h-48"
-              :src="
-                'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' +
-                pokemon.index +
-                '.png'
-              "
-            />
+          <div class="grid grid-cols-2 ">
+            <div>
+              <img
+                class="h-48"
+                :src="
+                  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' +
+                  pokemon.index +
+                  '.png'
+                "
+              />
+            </div>
+            <div>
+              <PokedexData :pokemon="pokemon" />
+            </div>
           </div>
           <div><PokemonTipo :types="pokemon.Type" /></div>
           <div>
@@ -176,7 +181,7 @@
             >
             <div v-if="state.showTM">
               <PokemonTm2
-                :pokemonMoveList="pokeMoves" 
+                :pokemonMoveList="pokeMoves"
                 :tmList="pokemon.Moves.TM"
               />
             </div>
@@ -198,6 +203,7 @@ import PokemonEvolution from "./PokemonEvolution.vue";
 import PokemonMoveGroup from "./PokemonMoveGroup.vue";
 import PokemonTm2 from "./PokemonTm2.vue";
 import TypeRelations from "./TypeRelations.vue";
+import PokedexData from "./PokedexData.vue";
 
 import { reactive } from "vue";
 
