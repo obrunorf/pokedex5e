@@ -1,32 +1,39 @@
 <template>
-    <div class="p-3 text-justify">
-        {{ getBichao(pokemon.name) }}
-        {{state.dexEntry}}
-    </div>
+  <div class="p-3 text-justify">
+    {{ getBichao(pokemon.name) }}
+    {{ state.dexEntry }}
+  </div>
 </template>
 
 <script setup>
-import axios from 'axios'; 
+import axios from "axios";
 import { reactive } from "vue";
 
 const state = reactive({
-     dexEntry: ''
+  dexEntry: "",
 });
 
-function getBichao (pokenome) {
-    let urlzao = `https://pokeapi.co/api/v2/pokemon-species/`+pokenome.toLowerCase();
-      axios.get(urlzao)
-      .then(function (response) {
-          state.dexEntry = (response.data.flavor_text_entries[0].flavor_text).replace(/(\r\n|\n|\r)/gm, " ").replace(""," ");
-        //alert (response.data);
-      })
-      .catch(function (error) {
-        alert(error);
-      });
-    }
+function getBichao(pokenome) {
+  let urlzao =
+    `https://pokeapi.co/api/v2/pokemon-species/` + pokenome.toLowerCase();
+  axios
+    .get(urlzao)
+    .then(function (response) {
+      state.dexEntry = response.data.flavor_text_entries
+        .find((obj) => {
+          return obj.language.name === "en";
+        })
+        .flavor_text.replace(/(\r\n|\n|\r)/gm, " ")
+        .replace("", " ");
+      //alert (response.data);
+    })
+    .catch(function (error) {
+      alert(error);
+    });
+}
 
 import { defineProps } from "vue";
 defineProps({
-  pokemon: Object  
+  pokemon: Object,
 });
 </script>
