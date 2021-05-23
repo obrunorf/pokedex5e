@@ -44,23 +44,19 @@ function getWeakness(types) {
   //dual type
   getTypeObj(type1).weaknesses.forEach(function (tipo) {
     if (
-      !(
-        getTypeObj(type2).strengths.includes(tipo) ||
-        getTypeObj(type2).immunes.includes(tipo)
-      )
+      !getTypeObj(type2).strengths.includes(tipo) &&
+      !getTypeObj(type2).immunes.includes(tipo)
     ) {
-      weaknesses_checked.push(tipo); //if second type isnt resistent or immune, add to the list
+      weaknesses_checked.push(tipo); //if second type isnt str or immune, add to the list
     }
   });
 
   getTypeObj(type2).weaknesses.forEach(function (tipo) {
     if (
-      !(
-        getTypeObj(type1).strengths.includes(tipo) ||
-        getTypeObj(type1).immunes.includes(tipo)
-      )
+      !getTypeObj(type1).strengths.includes(tipo) &&
+      !getTypeObj(type1).immunes.includes(tipo)
     ) {
-      weaknesses_checked.push(tipo); //if second type isnt resistent or immune, add to the list
+      weaknesses_checked.push(tipo); //if second type isnt str or immune, add to the list
     }
   });
 
@@ -68,8 +64,7 @@ function getWeakness(types) {
 }
 
 function getStrength(types) {
-
-    let type1 = types[0];
+  let type1 = types[0];
   let type2 = "";
   if (types[1] != undefined) {
     type2 = types[1];
@@ -86,7 +81,7 @@ function getStrength(types) {
         getTypeObj(type2).immunes.includes(tipo)
       )
     ) {
-      str_checked.push(tipo); //if second type isnt resistent or immune, add to the list
+      str_checked.push(tipo); //if second type isnt weak or immune, add to the list
     }
   });
 
@@ -105,9 +100,9 @@ function getStrength(types) {
 }
 
 function getImmunities(types) {
-    //console.log(getTypeObj(types[0]).immunes.concat(types[1].immunes));
+  //console.log(getTypeObj(types[0]).immunes.concat(types[1].immunes));
   if (types[1] != undefined) {
-    return getTypeObj(types[0]).immunes.concat(types[1].immunes);
+    return getTypeObj(types[0]).immunes.concat(getTypeObj(types[1]).immunes);
   } else {
     return getTypeObj(types[0]).immunes;
   }
@@ -204,7 +199,7 @@ const typeRelations = [
   },
   {
     name: "Ghost",
-    immunes: ["Normal, Fighting"],
+    immunes: ["Normal", "Fighting"],
     weaknesses: ["Dark", "Ghost"],
     strengths: ["Poison", "Bug"],
   },
