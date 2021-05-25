@@ -3,7 +3,7 @@
     <input
       type="text"
       v-model="state.searchPkmn"
-      class="border p-2 m-2 w-4/5"
+      class="border p-2 m-2 w-full md:w-4/5"
       placeholder="pokemon name, type or SR..."
     />
   </div>

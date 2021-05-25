@@ -1,6 +1,6 @@
 <template>
-  <div class="grid grid-cols-4 font-mono m-12">
-    <div>
+  <div class="grid grid-cols-1 md:grid-cols-4 font-mono md:m-12">
+    <div class="md:block" :class="{'hidden': state.pokemonSelecionado}">
       <lista-pokemons :parentState="state" />
     </div>
     <div class="col-span-3">
@@ -10,6 +10,7 @@
         :abilities="pokemonsAbilities"
         :evos="pokemonsEvos"
         :pokeMoves="pokeMoves"
+        :goBack="goBack"
       />
     </div>
   </div>
@@ -26,6 +27,10 @@ import pokeMoves from "./data/pokemons_moves_complete_w_tm.json";
 import { reactive } from "vue";
 
 const state = reactive({ pokemonSelecionado: undefined });
+
+function goBack(){
+  state.pokemonSelecionado = undefined;
+}
 
 function getPokemon(pokemonName) {
    return pokemonsImportados.find(
