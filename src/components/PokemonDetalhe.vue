@@ -1,25 +1,29 @@
 <template>
   <div class="p-3">
-    <div v-if="!pokemon">
+    <div v-if="pokemon" class="my-2 md:hidden cursor-pointer font-bold" @click="goBack()">
+        ← Go Back     
+    </div>
+    <div class="hidden md:block" v-if="!pokemon">
       <h1>Select a pokemon.</h1>
     </div>
     <div v-else class="leading-tight">
-      <div class="grid grid-cols-2 leading-snug">
+      <div class="grid grid-cols-1 md:grid-cols-2 leading-snug">
         <div>
           <!-- coluna 1 -->
           <h1 class="text-3xl font-extrabold">
             {{ pokemon.name }} #{{ pokemon.index }}
           </h1>
           <div>
-            <span class="font-bold"> Classification:</span> {{ pokemon.size }} |
-            <span class="font-bold">SR:</span>{{ pokemon.SR }}
+            <span class="font-bold"> Classification:</span>
+            {{ pokemon.size }} | <span class="font-bold">SR:</span
+            >{{ pokemon.SR }}
           </div>
           <div>
             <span class="font-bold">Minumum Level Found:</span>
             {{ pokemon["MIN LVL FD"] }}
           </div>
           <div><PokemonEvolution :pokemon="pokemon" :evos="evos" /></div>
-          <div class="grid grid-cols-2 ">
+          <div class="grid grid-cols-2">
             <div>
               <img
                 class="h-48"
@@ -228,6 +232,7 @@ defineProps({
   abilities: Object,
   evos: Object,
   pokeMoves: Object,
+  goBack: Function,
 });
 </script>
 
