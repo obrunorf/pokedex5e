@@ -38,8 +38,15 @@ function getPokemon(pokemonName) {
       );
 }
 
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+console.log(`__________       __              .___               .________       
+\\______   \\____ |  | __ ____   __| _/____ ___  ___  |   ____/ ____  
+ |     ___/  _ \\|  |/ // __ \\ / __ |/ __ \\\\  \\/  /  |____  \\_/ __ \\ 
+ |    |  (  <_> )    <\\  ___// /_/ \\  ___/ >    <   /       \\  ___/ 
+ |____|   \\____/|__|_ \\\\___  >____ |\\___  >__/\\_ \\ /______  /\\___  >
+                     \\/    \\/     \\/    \\/      \\/        \\/     \\/ 
+
+______________________________________________obrunorf__&__redbaty__
+https://github.com/obrunorf/pokedex5e`);
 </script>
 
 <style>
