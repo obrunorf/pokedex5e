@@ -12,7 +12,7 @@
     </div>
     <div v-else class="leading-tight">
       <div class="grid grid-cols-1 md:grid-cols-2 leading-snug">
-        <div class="md:overflow-y-auto" style="md:max-height: 84vh">
+        <div class="md:overflow-y-auto md:max-h-84">
           <!-- coluna 1 -->
           <h1 class="text-3xl font-extrabold">
             {{ pokemon.name }} #{{ pokemon.index }}
@@ -66,7 +66,7 @@
         </div>
         <!-- fim da coluna 1 -->
         <!-- coluna 2 moves -->
-        <div class="md:overflow-y-auto" style="md:max-height: 84vh">
+        <div class="md:overflow-y-auto md:max-h-84">
           <div v-if="pokemon.Moves['Starting Moves']">
             <span class="font-semibold text-lg cursor-pointer"
               ><div
@@ -261,4 +261,6 @@ defineProps({
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+
 </style>
