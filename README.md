@@ -1,6 +1,6 @@
 # pokedex5e
 
-version 0.1
+version 1.0
 
 https://pokedex-5e.herokuapp.com/
 
