@@ -1,7 +1,4 @@
-SKILLS
-SAVING THROWS
+TODO LIST
 
-
-MOVES
-EGGMOVES
-TM MOVES
+Alola Forms
+Multi form pokemons overhaul
