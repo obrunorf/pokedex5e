@@ -28,7 +28,7 @@ function getBichao(pokenome) {
       //alert (response.data);
     })
     .catch(function (error) {
-      alert(error);
+      console.log(error);
     });
 }
 

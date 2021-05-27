@@ -8,9 +8,23 @@
       }}
     </div>
     <div>
-      <span class="font-bold">Evolve: </span> {{ pokemon.name }} can evolve into
-      {{ pokemon.Evolve.into[0] }} at
-      <span class="font-bold">level {{ pokemon.Evolve.level }}</span> and above.
+      <span v-if="pokemon.Evolve.into" class="font-bold">Evolve: </span>
+      <span v-for="(into, index) in pokemon.Evolve.into" v-bind:key="into">
+        {{ pokemon.name }} can evolve into
+        {{ pokemon.Evolve.into[index] }}
+        <span v-if="pokemon.Evolve.level">
+          at <span class="font-bold">level {{ pokemon.Evolve.level }}</span> and
+          above.
+        </span>
+        <span v-if="pokemon.Evolve.move">
+          at the time it learns
+          <span class="font-bold"> {{ pokemon.Evolve.move }}.</span>
+        </span>
+        <span v-if="pokemon.Evolve.requires">
+          Requires {{ pokemon.Evolve.requires[index] }}.</span
+        >
+        <br>
+      </span>
       When it evolves, its health increases by double its level, and it gains
       <span class="font-bold">{{ pokemon.Evolve.points }} points</span> to add
       to its ability scores (max 20 discounting Nature and ASI).

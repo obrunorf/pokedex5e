@@ -762,6 +762,15 @@
       "Run Away",
       "Pickup"
     ],
+    "Evolve": {
+      "into": [
+        "Ambipom"
+      ],
+      "current_stage": 1,
+      "total_stages": 2,
+      "points": 8,
+      "move": "Double Hit"
+    },
     "CSp": 30,
     "HP": 25,
     "Hidden Ability": "Skill Link",
@@ -1203,7 +1212,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 10,
-      "level": 10
+      "level": 10,
+      "requires":"being at Nightime"
     },
     "HP": 23,
     "Hidden Ability": "Snow Warning",
@@ -7752,7 +7762,8 @@
       "current_stage": 1,
       "total_stages": 3,
       "points": 10,
-      "level": 6
+      "level": 6,
+      "requires": ["Loyalty +2"]
     },
     "HP": 17,
     "Hidden Ability": "Leaf Guard",
@@ -8095,7 +8106,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 9,
-      "level": 7
+      "level": 7,
+      "requires": ["Loyalty +2"]
     },
     "HP": 17,
     "Hidden Ability": "Limber",
@@ -8343,7 +8355,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 9,
-      "level": 6
+      "level": 6,
+      "requires": ["being Female, and it takes a cloak, according to the location where evolved: Forest/Grass: Plant Cloak, caves/desert/mountain: Sant Cloak, cities/buildings: Thrash Cloak","being Male"]
     },
     "HP": 17,
     "Hidden Ability": "Overcoat",
@@ -9886,7 +9899,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 8,
-      "level": 14
+      "level": 14,
+      "requires": ["Loyalty +2"]
     },
     "HP": 75,
     "Hidden Ability": "Healer",
@@ -10120,7 +10134,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 9,
-      "level": 12
+      "level": 12,
+      "requires": ["Thunder Stone"]
     },
     "HP": 27,
     "Hit Dice": 8,
@@ -11616,7 +11631,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 10,
-      "level": 8
+      "level": 8,
+      "requires": ["Deep Sea Tooth", "Deep Sea Scale"]
     },
     "HP": 18,
     "Hidden Ability": "Rattled",
@@ -12121,7 +12137,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 11,
-      "level": 8
+      "level": 8,
+      "requires": ["Moon Stone"]
     },
     "HP": 18,
     "Hidden Ability": "Friend Guard",
@@ -12250,7 +12267,8 @@
       "current_stage": 1,
       "total_stages": 3,
       "points": 7,
-      "level": 3
+      "level": 3,
+      "requires": ["Loyalty +2"]
     },
     "HP": 12,
     "Hidden Ability": "Friend Guard",
@@ -12648,7 +12666,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 17,
-      "level": 7
+      "level": 7,
+      "requires": ["being Female"]
     },
     "Fsp": 35,
     "HP": 16,
@@ -13269,7 +13288,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 14,
-      "level": 16
+      "level": 16,
+      "requires": ["being at Daytime","being at Nightime"]
     },
     "Fsp": 40,
     "HP": 236,
@@ -13381,7 +13401,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 11,
-      "level": 6
+      "level": 6,
+      "requires":["Sun Stone"]
     },
     "Fsp": 20,
     "HP": 17,
@@ -14780,12 +14801,13 @@
     ],
     "Evolve": {
       "into": [
-        "Marowak"
+        "Marowak", "Alolan Marowak"
       ],
       "current_stage": 1,
       "total_stages": 2,
       "points": 9,
-      "level": 8
+      "level": 8,
+      "requires": ["", "Alola Stone"]
     },
     "HP": 17,
     "Hidden Ability": "Battle Armor",
@@ -19716,7 +19738,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 6,
-      "level": 16
+      "level": 16,
+      "requires": ["Reaper Cloth"]
     },
     "Fsp": 25,
     "HP": 80,
@@ -20295,7 +20318,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 8,
-      "level": 15
+      "level": 15,
+      "requires":["Thunder stone"]
     },
     "Fsp": 30,
     "HP": 50,
@@ -20488,7 +20512,17 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 14,
-      "level": 8
+      "level": 8,
+      "requires": [
+        "Water Stone",
+        "Thunder stone",
+        "Fire Stone",
+        "Loyalty +2 at Daytime",
+        "Loyalty +2 at Nightime",
+        "Leaf Stone",
+        "Ice Stone",
+        "Loyalty +2 and a Fairy-Type Move"
+      ]
     },
     "HP": 16,
     "Hidden Ability": "Anticipation",
@@ -20728,7 +20762,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 6,
-      "level": 15
+      "level": 15,
+      "requires": ["Electirizer"]
     },
     "HP": 68,
     "Hidden Ability": "Vital Spirit",
@@ -21141,7 +21176,8 @@
       "current_stage": 1,
       "total_stages": 3,
       "points": 8,
-      "level": 8
+      "level": 8,
+      "requires": ["Loyalty +2"]
     },
     "HP": 26,
     "Hidden Ability": "Vital Spirit",
@@ -22200,12 +22236,13 @@
     ],
     "Evolve": {
       "into": [
-        "Exeggutor"
+        "Exeggutor", "Alolan Exeggutor"
       ],
       "current_stage": 1,
       "total_stages": 2,
       "points": 11,
-      "level": 8
+      "level": 8, 
+      "requires": ["Leaf Stone", "Alola Stone"]
     },
     "HP": 19,
     "Hidden Ability": "Harvest",
@@ -22823,7 +22860,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 18,
-      "level": 10
+      "level": 10,
+      "requires": ["Prism Scale"]
     },
     "HP": 16,
     "Hidden Ability": "Adaptability",
@@ -24071,7 +24109,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 12,
-      "level": 12
+      "level": 12,
+      "requires":["Shiny Stone"]
     },
     "Fsp": 20,
     "HP": 52,
@@ -24360,7 +24399,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 12,
-      "level": 9
+      "level": 9,
+      "requires": ["being at Daytime"]
     },
     "HP": 16,
     "Hidden Ability": "Contrary",
@@ -27520,6 +27560,16 @@
       "Hyper Cutter",
       "Sand Veil"
     ],
+    "Evolve": {
+      "into": [
+        "Gliscor"
+      ],
+      "current_stage": 1,
+      "total_stages": 2,
+      "points": 10,
+      "level": 6,
+      "requires": ["Razor Fang at Nightime"]
+    },
     "CSp": 25,
     "Fsp": 30,
     "HP": 18,
@@ -27775,7 +27825,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 10,
-      "level": 14
+      "level": 14,
+      "requires": ["Leaf Stone","Sun Stone"]
     },
     "HP": 50,
     "Hidden Ability": "Stench",
@@ -30600,7 +30651,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 12,
-      "level": 8
+      "level": 8,
+      "requires": ["Fire Stone"]
     },
     "HP": 16,
     "Hidden Ability": "Justified",
@@ -31553,7 +31605,8 @@
       "current_stage": 1,
       "total_stages": 3,
       "points": 8,
-      "level": 8
+      "level": 8,
+      "requires": ["Oval Stone"]
     },
     "HP": 23,
     "Hidden Ability": "Friend Guard",
@@ -32392,7 +32445,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 15,
-      "level": 9
+      "level": 9,
+      "requires":["Sun Stone"]
     },
     "HP": 16,
     "Hidden Ability": "Solar Power",
@@ -34612,7 +34666,8 @@
       "current_stage": 1,
       "total_stages": 3,
       "points": 7,
-      "level": 3
+      "level": 3,
+      "requires": ["Loyalty +2"]
     },
     "HP": 12,
     "Hidden Ability": "Friend Guard",
@@ -35497,7 +35552,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 11,
-      "level": 8
+      "level": 8,
+      "requires": ["Moon Stone"]
     },
     "HP": 18,
     "Hidden Ability": "Friend Guard",
@@ -36654,7 +36710,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 10,
-      "level": 8
+      "level": 8,
+      "requires": ["the presence of a Shelmet"]
     },
     "HP": 17,
     "Hidden Ability": "No Guard",
@@ -37251,7 +37308,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 11,
-      "level": 12
+      "level": 12,
+      "requires": ["","Dawn Stone & being Male"]
     },
     "HP": 40,
     "Hidden Ability": "Telepathy",
@@ -38977,7 +39035,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 10,
-      "level": 15
+      "level": 15,
+      "requires": ["Dusk Stone"]
     },
     "Fsp": 25,
     "HP": 50,
@@ -41406,7 +41465,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 7,
-      "level": 10
+      "level": 10,
+      "requires": ["Water Stone"]
     },
     "HP": 50,
     "Hidden Ability": "Own Tempo",
@@ -43349,7 +43409,8 @@
       "current_stage": 1,
       "total_stages": 3,
       "points": 8,
-      "level": 8
+      "level": 8,
+      "requires": ["Loyalty +2"]
     },
     "HP": 26,
     "Hidden Ability": "Vital Spirit",
@@ -43719,7 +43780,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 6,
-      "level": 15
+      "level": 15,
+      "requires": ["Magmarizer"]
     },
     "HP": 68,
     "Hidden Ability": "Vital Spirit",
@@ -45084,13 +45146,13 @@
     ],
     "Evolve": {
       "into": [
-        "Remoraid",
         "Mantine"
       ],
       "current_stage": 1,
       "total_stages": 2,
       "points": 6,
-      "level": 8
+      "level": 8,
+      "requires": ["a Remoraid in the party"]
     },
     "HP": 19,
     "Hidden Ability": "Water Veil",
@@ -48836,7 +48898,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 15,
-      "level": 7
+      "level": 7,
+      "requires": ["Shiny Stone"]
     },
     "HP": 17,
     "Hidden Ability": "Skill Link",
@@ -49183,7 +49246,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 9,
-      "level": 10
+      "level": 10,
+      "requires": ["Dusk Stone"]
     },
     "Moves": {
       "Level": {
@@ -50472,7 +50536,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 9,
-      "level": 8
+      "level": 8,
+      "requires": ["Loyalty +2"]
     },
     "HP": 25,
     "Hidden Ability": "Gluttony",
@@ -50601,7 +50666,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 10,
-      "level": 8
+      "level": 8,
+      "requires":["Moon Stone"]
     },
     "Fsp": 20,
     "HP": 20,
@@ -50728,7 +50794,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 8,
-      "level": 10
+      "level": 10,
+      "requires": ["Dusk Stone"]
     },
     "Fsp": 30,
     "HP": 20,
@@ -51798,7 +51865,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 12,
-      "level": 14
+      "level": 14,
+      "requires": ["Moon Stone"]
     },
     "HP": 45,
     "Hidden Ability": "Hustle",
@@ -51897,7 +51965,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 12,
-      "level": 14
+      "level": 14,
+      "requires": ["Moon Stone"]      
     },
     "HP": 45,
     "Hidden Ability": "Hustle",
@@ -53039,7 +53108,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 8,
-      "level": 10
+      "level": 10,
+      "requires": ["Leaf Stone"]
     },
     "HP": 50,
     "Hidden Ability": "Pickpocket",
@@ -53594,7 +53664,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 7,
-      "level": 14
+      "level": 14,
+      "requires": ["Metal Coat"]
     },
     "HP": 65,
     "Hidden Ability": "Weak Armor",
@@ -54505,7 +54576,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 11,
-      "level": 9
+      "level": 9,
+      "requires": ["another Dark-Type pokemon in the party"]
     },
     "HP": 20,
     "Hidden Ability": "Scrappy",
@@ -54744,7 +54816,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 11,
-      "level": 8
+      "level": 8,
+      "requires":["Water Stone"]
     },
     "HP": 17,
     "Hidden Ability": "Torrent",
@@ -54866,7 +54939,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 11,
-      "level": 8
+      "level": 8,
+      "requires":["Leafe Stone"]
     },
     "HP": 17,
     "Hidden Ability": "Overgrow",
@@ -54985,7 +55059,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 11,
-      "level": 8
+      "level": 8,
+      "requires": ["Fire Stone"]
     },
     "HP": 17,
     "Hidden Ability": "Blaze",
@@ -55993,7 +56068,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 15,
-      "level": 6
+      "level": 6,
+      "requires": ["Sun Stone"]
     },
     "HP": 17,
     "Hidden Ability": "Leaf Guard",
@@ -56515,7 +56591,8 @@
       "current_stage": 1,
       "total_stages": 3,
       "points": 7,
-      "level": 3
+      "level": 3,
+      "requires": ["Loyalty +2"]
     },
     "HP": 12,
     "Hidden Ability": "Lightning Rod",
@@ -57136,7 +57213,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 9,
-      "level": 8
+      "level": 8,
+      "requires": ["Thunder stone"]
     },
     "HP": 16,
     "Hidden Ability": "Lightning Rod",
@@ -57353,7 +57431,7 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 10,
-      "level": 10
+      "move": "Ancient Power"
     },
     "Hit Dice": 12,
     "MIN LVL FD": 8,
@@ -58193,7 +58271,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 12,
-      "level": 14
+      "level": 14,
+      "requires": ["Water Stone", "Kings Rock"]
     },
     "HP": 45,
     "Hidden Ability": "Swift Swim",
@@ -58833,7 +58912,8 @@
       "current_stage": 1,
       "total_stages": 3,
       "points": 8,
-      "level": 9
+      "level": 9,
+      "requires": ["Upgrade"]
     },
     "Fsp": 20,
     "HP": 35,
@@ -58933,6 +59013,16 @@
       "Trace",
       "Download"
     ],
+    "Evolve": {
+      "into": [
+        "PorygonZ"
+      ],
+      "current_stage": 2,
+      "total_stages": 3,
+      "points": 10,
+      "level": 14,
+      "requires": ["Dubious Disc"]
+    },
     "Fsp": 30,
     "HP": 81,
     "Hidden Ability": "Analytic",
@@ -62686,7 +62776,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 8,
-      "level": 16
+      "level": 16,
+      "requires": ["Protector"]
     },
     "HP": 128,
     "Hidden Ability": "Reckless",
@@ -63165,7 +63256,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 14,
-      "level": 8
+      "level": 8,
+      "requires": ["Loyalty +2 at Daytime"]
     },
     "HP": 16,
     "Hidden Ability": "Prankster",
@@ -63276,12 +63368,13 @@
     ],
     "Evolve": {
       "into": [
-        "Lycanroc"
+        "Lycanroc Midday", "Lycanroc Dusk", "Lycanroc Midnight"
       ],
       "current_stage": 1,
       "total_stages": 2,
       "points": 14,
-      "level": 9
+      "level": 9,
+      "requires": ["being in morning", "being in afternoon", "being at night"]
     },
     "HP": 17,
     "Hidden Ability": "Steadfast",
@@ -63492,6 +63585,16 @@
       "Natural Cure",
       "Poison Point"
     ],
+    "Evolve": {
+      "into": [
+        "Roserade"
+      ],
+      "current_stage": 2,
+      "total_stages": 3,
+      "points": 12,
+      "level": 14,
+      "requires": ["Sun Stone"]
+    },
     "HP": 43,
     "Hidden Ability": "Leaf Guard",
     "Hit Dice": 8,
@@ -66111,7 +66214,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 7,
-      "level": 14
+      "level": 14,
+      "requires": ["Metal Coat"]
     },
     "Fsp": 35,
     "HP": 58,
@@ -67822,7 +67926,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 9,
-      "level": 8
+      "level": 8,
+      "requires": ["Water Stone"]
     },
     "HP": 18,
     "Hidden Ability": "Overcoat",
@@ -68047,7 +68152,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 14,
-      "level": 10
+      "level": 10,
+      "requires": ["the presence of a Karrablast"]
     },
     "HP": 17,
     "Hidden Ability": "Overcoat",
@@ -69905,7 +70011,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 9,
-      "level": 8
+      "level": 8,
+      "requires": ["Moon Stone"]
     },
     "HP": 16,
     "Hidden Ability": "Wonder Skin",
@@ -70605,7 +70712,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 12,
-      "level": 16
+      "level": 16,
+      "requires": ["being in the Rain"]
     },
     "HP": 84,
     "Hidden Ability": "Gooey",
@@ -70923,7 +71031,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 14,
-      "level": 10
+      "level": 10,
+      "requires": ["","Kings Rock"]
     },
     "HP": 20,
     "Hidden Ability": "Regenerator",
@@ -71329,7 +71438,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 11,
-      "level": 8
+      "level": 8,
+      "requires": ["Loyalty +2"]
     },
     "HP": 24,
     "Hidden Ability": "Hydration",
@@ -71445,6 +71555,16 @@
       "Inner Focus",
       "Keen Eye"
     ],
+    "Evolve": {
+      "into": [
+        "Weavile"
+      ],
+      "current_stage": 1,
+      "total_stages": 2,
+      "points": 12,
+      "level": 10,
+      "requires": ["Razor Claw at Nightime"]
+    },
     "CSp": 30,
     "HP": 30,
     "Hidden Ability": "Pickpocket",
@@ -71804,7 +71924,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 13,
-      "level": 14
+      "level": 14,
+      "requires":["","Dawn Stone & being Female"]
     },
     "HP": 17,
     "Hidden Ability": "Moody",
@@ -73263,7 +73384,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 11,
-      "level": 9
+      "level": 9,
+      "requires": ["Sachet"]
     },
     "Fsp": 20,
     "HP": 22,
@@ -74087,7 +74209,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 9,
-      "level": 9
+      "level": 9,
+      "requires": ["Water Stone"]
     },
     "HP": 16,
     "Hidden Ability": "Analytic",
@@ -74314,7 +74437,8 @@
       ],
       "current_stage": 2,
       "total_stages": 3,
-      "points": 14
+      "points": 14,
+      "move":"Stomp"
     },
     "HP": 45,
     "Hidden Ability": "Sweet Veil",
@@ -75150,7 +75274,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 13,
-      "level": 7
+      "level": 7,
+      "requires": ["Sun Stone"]
     },
     "HP": 18,
     "Hidden Ability": "Early Bird",
@@ -75495,7 +75620,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 13,
-      "level": 12
+      "level": 12,
+      "requires": ["Loyalty +2"]
     },
     "HP": 50,
     "Hidden Ability": "Overcoat",
@@ -76073,7 +76199,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 12,
-      "level": 9
+      "level": 9,
+      "requires": ["Whipped Dream"]
     },
     "Fsp": 20,
     "HP": 19,
@@ -78710,7 +78837,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 15,
-      "level": 15
+      "level": 15,
+      "requires": ["Shiny Stone"]
     },
     "Fsp": 30,
     "HP": 45,
@@ -81135,7 +81263,7 @@
       "Constitution"
     ],
     "size": "Medium",
-    "name": "Type Null"
+    "name": "Type: Null"
   },
   {
     "AC": 16,
@@ -81469,7 +81597,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 8,
-      "level": 6
+      "level": 6,
+      "requires":["Dex > Str", "Str > Dex", "Str = Dex"]
     },
     "HP": 17,
     "Hidden Ability": "Vital Spirit",
@@ -81558,7 +81687,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 11,
-      "level": 10
+      "level": 10,
+      "requires": ["being at Daytime"]
     },
     "HP": 18,
     "Hidden Ability": "Sturdy",
@@ -84343,7 +84473,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 12,
-      "level": 8
+      "level": 8,
+      "requires": ["Fire Stone"]
     },
     "HP": 16,
     "Hidden Ability": "Drought",
@@ -85261,7 +85392,8 @@
       "current_stage": 2,
       "total_stages": 3,
       "points": 9,
-      "level": 14
+      "level": 14,
+      "requires": ["Leaf Stone"]
     },
     "HP": 50,
     "Hidden Ability": "Gluttony",
@@ -86325,7 +86457,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 11,
-      "level": 7
+      "level": 7,
+      "requires": ["Loyalty +2"]
     },
     "Fsp": 25,
     "HP": 18,
@@ -86760,7 +86893,8 @@
       "current_stage": 1,
       "total_stages": 3,
       "points": 6,
-      "level": 4
+      "level": 4,
+      "requires": ["Daytime", "Nightime"]
     },
     "HP": 16,
     "Hidden Ability": "Run Away",
@@ -86810,7 +86944,7 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 8,
-      "level": 5
+      "level": 5      
     },
     "HP": 18,
     "Hidden Ability": "Telepathy",
@@ -87284,6 +87418,15 @@
       "Speed Boost",
       "Compound Eyes"
     ],
+    "Evolve": {
+      "into": [
+        "Yanmega"
+      ],
+      "current_stage": 1,
+      "total_stages": 2,
+      "points": 8,
+      "move": "Ancient Power"
+    },
     "Fsp": 40,
     "HP": 58,
     "Hidden Ability": "Frisk",
@@ -87496,7 +87639,8 @@
       "current_stage": 1,
       "total_stages": 2,
       "points": 10,
-      "level": 6
+      "level": 6,
+      "requires": ["being at Daytime"]
     },
     "HP": 19,
     "Hidden Ability": "Adaptability",

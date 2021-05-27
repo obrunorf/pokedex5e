@@ -1,14 +1,18 @@
 <template>
   <div class="p-3">
-    <div v-if="pokemon" class="my-2 md:hidden cursor-pointer font-bold" @click="goBack()">
-        ← Go Back     
+    <div
+      v-if="pokemon"
+      class="my-2 md:hidden cursor-pointer font-bold"
+      @click="goBack()"
+    >
+      ← Go Back
     </div>
     <div class="hidden md:block" v-if="!pokemon">
       <h1>Select a pokemon.</h1>
     </div>
     <div v-else class="leading-tight">
       <div class="grid grid-cols-1 md:grid-cols-2 leading-snug">
-        <div>
+        <div class="md:overflow-y-auto" style="md:max-height: 84vh">
           <!-- coluna 1 -->
           <h1 class="text-3xl font-extrabold">
             {{ pokemon.name }} #{{ pokemon.index }}
@@ -22,7 +26,7 @@
             <span class="font-bold">Minumum Level Found:</span>
             {{ pokemon["MIN LVL FD"] }}
           </div>
-          <div><PokemonEvolution :pokemon="pokemon" :evos="evos" /></div>
+
           <div class="grid grid-cols-2">
             <div>
               <img
@@ -58,10 +62,11 @@
           <div><PokemonAtributo :attributes="pokemon.attributes" /></div>
           <div><PokemonSkillsSaves :pokemon="pokemon" /></div>
           <div><TypeRelations :types="pokemon.Type" /></div>
+          <div><PokemonEvolution :pokemon="pokemon" :evos="evos" /></div>
         </div>
         <!-- fim da coluna 1 -->
         <!-- coluna 2 moves -->
-        <div class="overflow-y-auto" style="max-height: 84vh">
+        <div class="md:overflow-y-auto" style="md:max-height: 84vh">
           <div v-if="pokemon.Moves['Starting Moves']">
             <span class="font-semibold text-lg cursor-pointer"
               ><div
