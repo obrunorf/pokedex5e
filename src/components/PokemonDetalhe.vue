@@ -12,7 +12,7 @@
     </div>
     <div v-else class="leading-tight">
       <div class="grid grid-cols-1 md:grid-cols-2 leading-snug">
-        <div class="md:overflow-y-auto md:max-h-84">
+        <div class="md:overflow-y-auto md:max-h-96">
           <!-- coluna 1 -->
           <h1 class="text-3xl font-extrabold">
             {{ pokemon.name }} #{{ pokemon.index }}
@@ -30,7 +30,7 @@
           <div class="grid grid-cols-2">
             <div>
               <img
-                class="h-48"
+                class="h-48 float-left"
                 :src="
                   'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' +
                   pokemon.index +
@@ -66,11 +66,11 @@
         </div>
         <!-- fim da coluna 1 -->
         <!-- coluna 2 moves -->
-        <div class="md:overflow-y-auto md:max-h-84">
+        <div class="md:overflow-y-auto md:max-h-96">
           <div v-if="pokemon.Moves['Starting Moves']">
             <span class="font-semibold text-lg cursor-pointer"
               ><div
-                class="pl-3 p-3 hover:bg-blue-200 rounded-lg"
+                class="pl-3 p-3 hover:bg-blue-200 dark:hover:bg-gray-600 rounded-lg"
                 @click="state.showLv1 = !state.showLv1"
               >
                 > Starting Moves
@@ -86,7 +86,7 @@
           <div v-if="pokemon.Moves.Level['2']">
             <span class="font-semibold text-lg"
               ><div
-                class="pl-3 p-3 cursor-pointer hover:bg-blue-200 rounded-lg"
+                class="pl-3 p-3 cursor-pointer hover:bg-blue-200 dark:hover:bg-gray-600 rounded-lg"
                 @click="state.showLv2 = !state.showLv2"
               >
                 > Level 2
@@ -102,7 +102,7 @@
           <div v-if="pokemon.Moves.Level['6']">
             <span class="font-semibold text-lg"
               ><div
-                class="pl-3 p-3 cursor-pointer hover:bg-blue-200 rounded-lg"
+                class="pl-3 p-3 cursor-pointer hover:bg-blue-200 dark:hover:bg-gray-600 rounded-lg"
                 @click="state.showLv6 = !state.showLv6"
               >
                 > Level 6
@@ -118,7 +118,7 @@
           <div v-if="pokemon.Moves.Level['10']">
             <span class="font-semibold text-lg"
               ><div
-                class="pl-3 p-3 cursor-pointer hover:bg-blue-200 rounded-lg"
+                class="pl-3 p-3 cursor-pointer hover:bg-blue-200 dark:hover:bg-gray-600 rounded-lg"
                 @click="state.showLv10 = !state.showLv10"
               >
                 > Level 10
@@ -134,7 +134,7 @@
           <div v-if="pokemon.Moves.Level['14']">
             <span class="font-semibold text-lg"
               ><div
-                class="pl-3 p-3 cursor-pointer hover:bg-blue-200 rounded-lg"
+                class="pl-3 p-3 cursor-pointer hover:bg-blue-200 dark:hover:bg-gray-600 rounded-lg"
                 @click="state.showLv14 = !state.showLv14"
               >
                 > Level 14
@@ -150,7 +150,7 @@
           <div v-if="pokemon.Moves.Level['18']">
             <span class="font-semibold text-lg"
               ><div
-                class="pl-3 p-3 cursor-pointer hover:bg-blue-200 rounded-lg"
+                class="pl-3 p-3 cursor-pointer hover:bg-blue-200 dark:hover:bg-gray-600 rounded-lg"
                 @click="state.showLv18 = !state.showLv18"
               >
                 > Level 18
@@ -168,7 +168,7 @@
             <span
               class="font-semibold text-lg cursor-pointer"
               @click="state.showEggM = !state.showEggM"
-              ><div class="pl-3 p-3 hover:bg-blue-200 rounded-lg">
+              ><div class="pl-3 p-3 hover:bg-blue-200 dark:hover:bg-gray-600 rounded-lg">
                 > Egg Moves
               </div></span
             >
@@ -184,7 +184,7 @@
             <span
               class="font-semibold text-lg cursor-pointer"
               @click="state.showTM = !state.showTM"
-              ><div class="pl-3 p-3 hover:bg-blue-200 rounded-lg">
+              ><div class="pl-3 p-3 hover:bg-blue-200 dark:hover:bg-gray-600 rounded-lg">
                 > TM's
               </div></span
             >
@@ -249,7 +249,7 @@ defineProps({
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f8f8f8;
+background: hsla(0, 0%, 97%, 0);
 }
 
 /* Handle */

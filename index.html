@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex 5E</title>
     <meta
@@ -13,10 +14,17 @@
       name="keywords"
       content="Pokemon, Pokedex, 5E, Pokemon 5e, RPG, DND, Dungeons and Dragons, Monsters Manual, Tabletop"
     />
-    <meta name="google-site-verification" content="o4Oq_1uYIMPbJ5nbsiaM-YOoO_SXzDSxDlPO5mpSCBU" />
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
+
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
 </html>

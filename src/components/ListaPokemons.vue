@@ -1,16 +1,16 @@
 <template>
-  <div>
+  <div>    
     <input
       type="text"
       v-model="state.searchPkmn"
-      class="border p-2 m-2 w-full md:w-4/5"
+      class="col-span-9 border p-2 m-3 w-11/12 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-900"
       placeholder="pokemon name, type or SR..."
     />
   </div>
-  <div class="overflow-y-auto" style="max-height: 83vh">
+  <div class="overflow-y-auto p-2" style="height: 93vh">
     <div class="space-y-4">
       <div
-        class="grid grid-cols-3 max-w-md mx-auto hover:bg-blue-200 rounded-lg overflow-hidden auto-cols-min cursor-pointer"
+        class="grid grid-cols-3 max-w-md mx-auto hover:bg-blue-200 dark:hover:bg-gray-600 rounded-lg overflow-hidden auto-cols-min cursor-pointer"
         v-for="pokemon in filtrar(state.searchPkmn)"
         v-bind:key="pokemon.name"
         @click="parentState.pokemonSelecionado = pokemon.name"
@@ -102,7 +102,7 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f8f8f8;
+  background: hsla(0, 0%, 97%, 0);
 }
 
 /* Handle */

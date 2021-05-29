@@ -1,5 +1,5 @@
 <template>
-  <div class="border-2 rounded grid grid-cols-2 p-3">    
+  <div class="border-2 rounded grid grid-cols-2 p-3 dark:border-gray-600">    
     <div v-if="moveIn.tm" class="font-bold font-base col-span-2">TM # {{ moveIn.tm }}</div>
     <span class="font-bold font-base">{{ moveIn.name }}</span>        
     <span class="text-xs tracking-tight leading-3"
@@ -42,42 +42,42 @@
         <table class="table-auto">
           <thead>
             <tr>
-              <th class="w-2/12 border">Level</th>
-              <th class="w-2/12 border"> 1 </th>
-              <th class="w-2/12 border"> 5 </th>
-              <th class="w-2/12 border"> 10 </th>
-              <th class="w-2/12 border"> 17 </th>
-              <th class="w-2/12 border">+Move?</th>
+              <th class="w-2/12 border dark:border-gray-600">Level</th>
+              <th class="w-2/12 border dark:border-gray-600"> 1 </th>
+              <th class="w-2/12 border dark:border-gray-600"> 5 </th>
+              <th class="w-2/12 border dark:border-gray-600"> 10 </th>
+              <th class="w-2/12 border dark:border-gray-600"> 17 </th>
+              <th class="w-2/12 border dark:border-gray-600">+Move?</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="border text-center">
+              <td class="border text-center dark:border-gray-600">
                 <span class="font-bold">Damage</span>
               </td>
-              <td class="border text-center">
+              <td class="border text-center dark:border-gray-600">
                 <span>
                   {{ moveIn.Damage["1"].amount }}d{{
                     moveIn.Damage["1"].dice_max
                   }}
                 </span>
               </td>
-              <td class="border text-center">
+              <td class="border text-center dark:border-gray-600">
                 {{ moveIn.Damage["5"].amount }}d{{
                   moveIn.Damage["5"].dice_max
                 }}
               </td>
-              <td class="border text-center">
+              <td class="border text-center dark:border-gray-600">
                 {{ moveIn.Damage["10"].amount }}d{{
                   moveIn.Damage["10"].dice_max
                 }}
               </td>
-              <td class="border text-center">
+              <td class="border text-center dark:border-gray-600">
                 {{ moveIn.Damage["17"].amount }}d{{
                   moveIn.Damage["17"].dice_max
                 }}
               </td>
-              <td class="border text-center">
+              <td class="border text-center dark:border-gray-600">
                 <span v-if="moveIn.Damage['1'].move"> yes</span>
                 <span v-else> no</span>
               </td>
@@ -99,7 +99,7 @@ function dummy(type) {
 
 function getRangeM(range) {
   let rangeM = numbersOnly(range);
-  if (rangeM == 0) return "Meelee(1.5m)";
+  if (rangeM == 0) return "Melee(1.5m)";
   else return range + "(" + Math.floor((rangeM * 1.5) / 5) + "m)";
 }
 

@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
     maxHeight: {
@@ -9,6 +9,7 @@ module.exports = {
       '1/2': '50%',
       '3/4': '75%',
       '84' : '84vh',
+      '96' : '96vh',
       'full': '100%',
     },
   },
