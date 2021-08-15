@@ -16657,7 +16657,7 @@
         "move": true
       }
     },
-    "Description": "You wrap yourself around a creature, trying to squeeze the life from them. Make a melee attack roll. On a hit, the target takes normal damage and is grappled. At the beginning of each of its turns, it may attempt to escape with a STR save against your Move DC. As long as the target is grappled on your subsequent turns, this move can be activated again as a bonus action with an automatic hit, dealing normal damage.",
+    "Description": "You wrap yourself around a creature, trying to squeeze the life from them. Make a melee attack roll. On a hit, the target takes normal damage and is grappled. At the beginning of each of its turns, it may attempt to escape with a STR save against your Move DC. As long as the target is grappled on your subsequent turns, this move can be activated again as a bonus action with an automatic hit, dealing 1d4 normal damage.",
     "Duration": "Instantaneous",
     "Move Power": [
       "STR"
@@ -18061,7 +18061,7 @@
         "move": true
       }
     },
-    "Description": "You attempt to grapple a target into submission. Make a melee attack roll. On a hit, the target takes normal damage and is grappled. At the beginning of each of its turns, it may attempt to escape with a STR save against your Move DC. While a creature is grappled, you may continue this move, as a bonus action, to do an automatic normal damage without having to make an attack roll.",
+    "Description": "You attempt to grapple a target into submission. Make a melee attack roll. On a hit, the target takes normal damage and is grappled. At the beginning of each of its turns, it may attempt to escape with a STR save against your Move DC. While a creature is grappled, you may continue this move, as a bonus action, to do an automatic 1d4 normal damage without having to make an attack roll.",
     "Duration": "Instantaneous",
     "Move Power": [
       "STR"
@@ -18976,7 +18976,7 @@
     "tm": 40
   },
   {
-    "Description": "You apply pressure to different stress points on your body, boosting a random ability for the duration. When activating this move, roll a d6 and gain the following boost based on the result. When activated on subsequent turns, any previous effect ends. \n\n\u003Cdiv style=\u0027column-count:2\u0027\u003E\n\n| d6  | Effect |\n|:---:|:-----------:|\n|  1  | \u002B1 to attack rolls |\n|  2  | \u002B2 to damage rolls |\n|  3  | \u002B10 temporary HP |\n\n| d6  | Effect |\n|:---:|:-----------:|\n|  4  | \u002B1 to saving throws |\n|  5  | Critical Hit range \u002B1 |\n|  6  | \u002B1 to Armor Class |\n\n\u003C/div\u003E",
+    "Description": "You apply pressure to different stress points on your body, boosting a random ability for the duration. When activating this move, roll a d6 and gain the following boost based on the result. When activated on subsequent turns, any previous effect ends. 1:+1 to attack rolls;  2: +2 to damage rolls;  3: +10 temporary HP; 4: +1 to saving throws; 5: Critical Hit range +1; 6: +1 to Armor Class",
     "Duration": "1 minute",
     "Move Time": "1 action",
     "PP": 20,

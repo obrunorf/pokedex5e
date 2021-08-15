@@ -16,6 +16,11 @@
     ><span>{{ formatSpeed(pokemon.CSp) }}</span>
   </div>
   <div></div>
+    <div v-if="pokemon.Ssp">
+    <span class="font-bold">Swimming: </span
+    ><span>{{ formatSpeed(pokemon.Ssp) }}</span>
+  </div>
+  <div></div>
 </template>
 
 <script setup>

@@ -21,9 +21,11 @@
           <span class="font-bold"> {{ pokemon.Evolve.move }}.</span>
         </span>
         <span v-if="pokemon.Evolve.requires">
-          Requires {{ pokemon.Evolve.requires[index] }}.</span
-        >
-        <br>
+          <span v-if="pokemon.Evolve.requires[index] != ''">
+            Requires {{ pokemon.Evolve.requires[index] }}.</span
+          >
+        </span>
+        <br />
       </span>
       When it evolves, its health increases by double its level, and it gains
       <span class="font-bold">{{ pokemon.Evolve.points }} points</span> to add
