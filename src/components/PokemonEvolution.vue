@@ -11,8 +11,11 @@
       <span v-if="pokemon.Evolve.into" class="font-bold">Evolve: </span>
       <span v-for="(into, index) in pokemon.Evolve.into" v-bind:key="into">
         {{ pokemon.name }} can evolve into
-        {{getEvoImg(pokemon.Evolve.into[index])}}
-        <img style="display: inline-block" :src="state.evoImg[index]" />        
+        <img
+          style="display: inline-block"
+          :src="state.evoImg[pokemon.Evolve.into[index]]"
+        />
+        {{ index }}
         {{ pokemon.Evolve.into[index] }}
         <span v-if="pokemon.Evolve.level">
           at <span class="font-bold">level {{ pokemon.Evolve.level }}</span> and
@@ -71,34 +74,45 @@ function getLastStageStage(name) {
 }
 
 import axios from "axios";
-import { reactive } from "vue";
+import { reactive, defineProps, toRefs } from "vue";
 
 const state = reactive({
-  evoImg: [],
+  evoImg: {}
 });
+
+const props = defineProps({
+  pokemon: Object,
+  evos: Object,
+});
+
+const { pokemon } = toRefs(props);
+
 
 function getEvoImg(pokenome) {
   let urlzao = `https://pokeapi.co/api/v2/pokemon/` + pokenome.toLowerCase();
-  axios
+  return axios
     .get(urlzao)
     .then(function (response) {
-      let ender = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/" +
-          response.data.id +
-          ".png";
-      //state.evoImg.push(ender);
-      if (state.evoImg.indexOf(ender) === -1){state.evoImg.push(ender)};
-      state.evoImg.sort();
-      //console.log(state.evoImg);
-      //alert (response.data);
+      let ender =
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/" +
+        response.data.id +
+        ".png";
+      return ender;
     })
     .catch(function (error) {
       console.log(error);
     });
 }
-import { defineProps } from "vue";
-defineProps({
-  pokemon: Object,
-  evos: Object,
-});
+
+const init = async () => {
+  if (pokemon.value.Evolve?.into) {
+    for (const evolution of pokemon.value.Evolve.into) {
+      state.evoImg[evolution] = await getEvoImg(evolution);
+    }
+  }
+};
+
+
+init();
 </script>
 
