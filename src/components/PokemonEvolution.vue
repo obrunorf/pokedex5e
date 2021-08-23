@@ -11,6 +11,9 @@
       <span v-if="pokemon.Evolve.into" class="font-bold">Evolve: </span>
       <span v-for="(into, index) in pokemon.Evolve.into" v-bind:key="into">
         {{ pokemon.name }} can evolve into
+        {{getEvoImg(pokemon.Evolve.into[index])}}
+        <img style="display: inline-block" :src="state.evoImg[index]" />
+        {{index}}
         {{ pokemon.Evolve.into[index] }}
         <span v-if="pokemon.Evolve.level">
           at <span class="font-bold">level {{ pokemon.Evolve.level }}</span> and
@@ -29,7 +32,7 @@
       </span>
       When it evolves, its health increases by double its level, and it gains
       <span class="font-bold">{{ pokemon.Evolve.points }} points</span> to add
-      to its ability scores (max 20 discounting Nature and ASI).
+      to its ability scores (max 20 before Nature).
     </div>
   </div>
   <div v-else-if="evos[pokemon.name]">
@@ -68,6 +71,30 @@ function getLastStageStage(name) {
   //get the stage of fully evolved pokemon
 }
 
+import axios from "axios";
+import { reactive } from "vue";
+
+const state = reactive({
+  evoImg: [],
+});
+
+function getEvoImg(pokenome) {
+  let urlzao = `https://pokeapi.co/api/v2/pokemon/` + pokenome.toLowerCase();
+  axios
+    .get(urlzao)
+    .then(function (response) {
+      let ender = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/" +
+          response.data.id +
+          ".png";
+      //state.evoImg.push(ender);
+      if (state.evoImg.indexOf(ender) === -1){state.evoImg.push(ender)};
+      console.log(state.evoImg);
+      //alert (response.data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
 import { defineProps } from "vue";
 defineProps({
   pokemon: Object,

@@ -2287,25 +2287,25 @@
   {
     "Damage": {
       "1": {
-        "amount": 1,
+        "amount": 2,
         "dice_max": 4,
         "move": false,
         "times": 2
       },
       "10": {
-        "amount": 1,
+        "amount": 5,
         "dice_max": 4,
         "move": false,
         "times": 5
       },
       "17": {
-        "amount": 1,
+        "amount": 6,
         "dice_max": 4,
         "move": false,
         "times": 6
       },
       "5": {
-        "amount": 1,
+        "amount": 4,
         "dice_max": 4,
         "move": false,
         "times": 4
