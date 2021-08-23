@@ -231,6 +231,10 @@ function getHiddenAbility(pokemon) {
   return pokemon["Hidden Ability"];
 }
 
+function init(){
+  window.scrollTo(0,0); 
+}
+
 import { defineProps } from "vue";
 defineProps({
   pokemon: Object,
@@ -240,6 +244,8 @@ defineProps({
   goBack: Function,
   parentState: Object
 });
+
+init();
 </script>
 
 <style scoped>
