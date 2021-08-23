@@ -10,13 +10,13 @@
     <div>
       <span v-if="pokemon.Evolve.into" class="font-bold">Evolve: </span>
       <span v-for="(into, index) in pokemon.Evolve.into" v-bind:key="into">
-        {{ pokemon.name }} can evolve into
-        <img
-          style="display: inline-block"
-          :src="state.evoImg[pokemon.Evolve.into[index]]"
-        />
-        {{ index }}
-        {{ pokemon.Evolve.into[index] }}
+        {{ pokemon.name }} can evolve into        
+        <div
+          class="border-2 rounded dark:border-gray-600 display: inline-block"
+        >
+          <img style="display: inline-block" :src="state.evoImg[pokemon.Evolve.into[index]]" />
+          {{ pokemon.Evolve.into[index] }} &nbsp;
+        </div>
         <span v-if="pokemon.Evolve.level">
           at <span class="font-bold">level {{ pokemon.Evolve.level }}</span> and
           above.
@@ -50,9 +50,20 @@
   <div v-else>
     <span class="font-bold">Stage: </span> <span>1/1 | 4 ASI</span>
   </div>
+  <div>
+      <span v-if="evos[pokemon.name].current_stage>1">Evolves from 
+        <div
+          class="border-2 rounded dark:border-gray-600 display: inline-block"
+        >          
+          <img style="display: inline-block" :src="state.previousImg" />
+          {{ state.previousStage }} &nbsp;
+        </div>
+      </span>
+  </div>
 </template>
 
 <script setup>
+
 function getPkmnStage(current_stage, total_stages) {
   return (
     current_stage + "/" + total_stages + " | " + getAsi(total_stages) + " ASI"
@@ -73,11 +84,17 @@ function getLastStageStage(name) {
   //get the stage of fully evolved pokemon
 }
 
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 import axios from "axios";
 import { reactive, defineProps, toRefs } from "vue";
 
 const state = reactive({
-  evoImg: {}
+  evoImg: {},
+  previousStage: "",
+  previousImg: ""
 });
 
 const props = defineProps({
@@ -86,7 +103,7 @@ const props = defineProps({
 });
 
 const { pokemon } = toRefs(props);
-
+const { evos } = toRefs(props);
 
 function getEvoImg(pokenome) {
   let urlzao = `https://pokeapi.co/api/v2/pokemon/` + pokenome.toLowerCase();
@@ -109,10 +126,38 @@ const init = async () => {
     for (const evolution of pokemon.value.Evolve.into) {
       state.evoImg[evolution] = await getEvoImg(evolution);
     }
+  }  
+  if(evos.value[pokemon.value.name].current_stage>1){
+    state.previousStage = await getPreviousStage(pokemon.value.name);
+    state.previousImg = await getPreImg(state.previousStage);
   }
 };
 
+function getPreviousStage(pokenome) {
+  let urlzao = `https://pokeapi.co/api/v2/pokemon-species/` + pokenome.toLowerCase();
+  return axios
+    .get(urlzao)
+    .then(function (response) {                    
+      return response.data.evolves_from_species.name;
+    })
+    .catch(function (error) {
+      console.log(error);
+    });    
+}
 
+function getPreImg(pokenome) {
+  let urlzao = `https://pokeapi.co/api/v2/pokemon/` + pokenome.toLowerCase();
+   return axios
+    .get(urlzao)
+    .then(function (response) {
+      return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/" +
+        response.data.id +
+        ".png";      
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
 init();
 </script>
 
