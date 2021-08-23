@@ -12,7 +12,8 @@
       <span v-for="(into, index) in pokemon.Evolve.into" v-bind:key="into">
         {{ pokemon.name }} can evolve into        
         <div
-          class="border-2 rounded dark:border-gray-600 display: inline-block"
+          class="border-2 rounded display: inline-block dark:border-gray-600 hover:bg-blue-200 dark:hover:bg-gray-600 cursor-pointer"
+          @click="parentState.pokemonSelecionado = pokemon.Evolve.into[index].capitalize()"
         >
           <img style="display: inline-block" :src="state.evoImg[pokemon.Evolve.into[index]]" />
           {{ pokemon.Evolve.into[index] }} &nbsp;
@@ -51,12 +52,13 @@
     <span class="font-bold">Stage: </span> <span>1/1 | 4 ASI</span>
   </div>
   <div>
-      <span v-if="evos[pokemon.name].current_stage>1">Evolves from 
+      <span v-if="evos[pokemon.name]?.current_stage>1">Evolves from 
         <div
-          class="border-2 rounded dark:border-gray-600 display: inline-block"
+          class="border-2 rounded display: inline-block dark:border-gray-600 hover:bg-blue-200 dark:hover:bg-gray-600 cursor-pointer"
+          @click="parentState.pokemonSelecionado = state.previousStage.capitalize()"
         >          
           <img style="display: inline-block" :src="state.previousImg" />
-          {{ state.previousStage }} &nbsp;
+          {{ state.previousStage.capitalize() }} &nbsp;
         </div>
       </span>
   </div>
@@ -100,6 +102,7 @@ const state = reactive({
 const props = defineProps({
   pokemon: Object,
   evos: Object,
+  parentState: Object
 });
 
 const { pokemon } = toRefs(props);
@@ -127,7 +130,7 @@ const init = async () => {
       state.evoImg[evolution] = await getEvoImg(evolution);
     }
   }  
-  if(evos.value[pokemon.value.name].current_stage>1){
+  if(evos.value[pokemon.value.name]?.current_stage>1){
     state.previousStage = await getPreviousStage(pokemon.value.name);
     state.previousImg = await getPreImg(state.previousStage);
   }

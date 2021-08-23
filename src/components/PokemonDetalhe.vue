@@ -62,7 +62,7 @@
           <div><PokemonAtributo :attributes="pokemon.attributes" /></div>
           <div><PokemonSkillsSaves :pokemon="pokemon" /></div>
           <div><TypeRelations :types="pokemon.Type" /></div>
-          <div><PokemonEvolution :pokemon="pokemon" :evos="evos" /></div>
+          <div><PokemonEvolution :pokemon="pokemon" :evos="evos" :parentState="parentState" /></div>
         </div>
         <!-- fim da coluna 1 -->
         <!-- coluna 2 moves -->
@@ -238,6 +238,7 @@ defineProps({
   evos: Object,
   pokeMoves: Object,
   goBack: Function,
+  parentState: Object
 });
 </script>
 

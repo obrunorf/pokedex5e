@@ -23599,7 +23599,15 @@
     "Abilities": [
       "Flower Veil"
     ],
-    "Evolve": "Floette",
+    "Evolve": {"into": [
+      "Floette"
+    ],
+    "current_stage": 1,
+    "total_stages": 3,
+    "points": 8,
+    "level": 6
+},
+
     "Fsp": 10,
     "HP": 17,
     "Hidden Ability": "Symbiosis",

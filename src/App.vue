@@ -12,6 +12,7 @@
           :evos="pokemonsEvos"
           :pokeMoves="pokeMoves"
           :goBack="goBack"
+          :parentState="state"
         />
       </div>
     </div>
