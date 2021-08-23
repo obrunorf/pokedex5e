@@ -12,8 +12,7 @@
       <span v-for="(into, index) in pokemon.Evolve.into" v-bind:key="into">
         {{ pokemon.name }} can evolve into
         {{getEvoImg(pokemon.Evolve.into[index])}}
-        <img style="display: inline-block" :src="state.evoImg[index]" />
-        {{index}}
+        <img style="display: inline-block" :src="state.evoImg[index]" />        
         {{ pokemon.Evolve.into[index] }}
         <span v-if="pokemon.Evolve.level">
           at <span class="font-bold">level {{ pokemon.Evolve.level }}</span> and
@@ -88,7 +87,8 @@ function getEvoImg(pokenome) {
           ".png";
       //state.evoImg.push(ender);
       if (state.evoImg.indexOf(ender) === -1){state.evoImg.push(ender)};
-      console.log(state.evoImg);
+      state.evoImg.sort();
+      //console.log(state.evoImg);
       //alert (response.data);
     })
     .catch(function (error) {
