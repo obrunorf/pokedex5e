@@ -157,7 +157,7 @@ const typeRelations = [
   },
   {
     name: "Fighting",
-    immunes: ["Ghost"],
+    immunes: [],
     weaknesses: ["Flying", "Psychic", "Fairy"],
     strengths: ["Rock", "Dark", "Bug"],
   },
