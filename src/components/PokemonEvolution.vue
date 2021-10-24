@@ -109,6 +109,7 @@ const { pokemon } = toRefs(props);
 const { evos } = toRefs(props);
 
 function getEvoImg(pokenome) {
+  if(pokenome === "Mr. Mime"){ pokenome = 'mr-mime'};
   let urlzao = `https://pokeapi.co/api/v2/pokemon/` + pokenome.toLowerCase();
   return axios
     .get(urlzao)
@@ -137,6 +138,7 @@ const init = async () => {
 };
 
 function getPreviousStage(pokenome) {
+  if(pokenome === "Mr. Mime"){ pokenome = 'mr-mime'};
   let urlzao = `https://pokeapi.co/api/v2/pokemon-species/` + pokenome.toLowerCase();
   return axios
     .get(urlzao)
@@ -149,6 +151,7 @@ function getPreviousStage(pokenome) {
 }
 
 function getPreImg(pokenome) {
+  if(pokenome === "Mr. Mime"){ pokenome = 'mr-mime'};
   let urlzao = `https://pokeapi.co/api/v2/pokemon/` + pokenome.toLowerCase();
    return axios
     .get(urlzao)
