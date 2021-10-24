@@ -132,8 +132,11 @@ const init = async () => {
     }
   }  
   if(evos.value[pokemon.value.name]?.current_stage>1){
-    state.previousStage = await getPreviousStage(pokemon.value.name);
-    state.previousImg = await getPreImg(state.previousStage);
+    let temp = await getPreviousStage(pokemon.value.name);     
+    state.previousImg = await getPreImg(temp);
+
+    if (temp === 'mime-jr') { temp = 'Mime Jr.'} //uh, provisory
+      state.previousStage = temp;
   }
 };
 
