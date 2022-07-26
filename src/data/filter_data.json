@@ -162,9 +162,27 @@
     "SR": 0.25,
     "MIN LVL FD": 1
   },
+  "Alolan Rattata": {
+    "index": 19,
+    "Type": [
+      "Dark",
+      "Normal"
+    ],
+    "SR": 0.25,
+    "MIN LVL FD": 1
+  },
   "Raticate": {
     "index": 20,
     "Type": [
+      "Normal"
+    ],
+    "SR": 5.0,
+    "MIN LVL FD": 5
+  },
+  "Alolan Raticate": {
+    "index": 20,
+    "Type": [
+      "Dark",
       "Normal"
     ],
     "SR": 5.0,
@@ -220,6 +238,15 @@
     "SR": 7.0,
     "MIN LVL FD": 5
   },
+  "Alolan Raichu": {
+    "index": 26,
+    "Type": [
+      "Electric",
+      "Psychic"
+    ],
+    "SR": 7.0,
+    "MIN LVL FD": 5
+  },
   "Sandshrew": {
     "index": 27,
     "Type": [
@@ -228,10 +255,26 @@
     "SR": 0.5,
     "MIN LVL FD": 1
   },
+  "Alolan Sandshrew": {
+    "index": 27,
+    "Type": [
+      "Ice","Steel"
+    ],
+    "SR": 0.5,
+    "MIN LVL FD": 1
+  },
   "Sandslash": {
     "index": 28,
     "Type": [
       "Ground"
+    ],
+    "SR": 7.0,
+    "MIN LVL FD": 5
+  },
+  "Alolan Sandslash": {
+    "index": 28,
+    "Type": [
+      "Ice","Steel"
     ],
     "SR": 7.0,
     "MIN LVL FD": 5

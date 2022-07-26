@@ -16,7 +16,7 @@
         @click="parentState.pokemonSelecionado = pokemon.name"
       >
         <div class="p-2">
-          <div>#{{ pokemon.number }}</div>
+          <div>#{{ numero_apenas(pokemon.number) }}</div>
           <div class="flex justify-center">
             <img
               :src="
@@ -47,17 +47,21 @@ const pokemonsGlobal = [];
 import { reactive, defineProps } from "vue";
 const state = reactive({ searchPkmn: "" });
 
-for (let i = 0; i < Object.keys(pokemons).length; i++) {
+for (let i = 1; i < Object.keys(pokemons).length; i++) {
+  let num = 0; 
   if (pokemons[i] !== undefined) {
-    var p = {
-      number: i,
+    if (pokemons[i][1] !== undefined){num=pokemons[i][1]}else{num=i};
+    var p = {      
+      number: num,
       name: pokemons[i][0],
       type: filtros[pokemons[i][0]].Type,
       sr: filtros[pokemons[i][0]].SR,
     };
     pokemonsGlobal.push(p);
   }
+  //console.log(pokemons[i][0]);
 }
+pokemonsGlobal.sort((a, b) => (numero_apenas(a.number) > numero_apenas(b.number)) ? 1 : -1 );
 
 function filtrar(pokemonFilter) {
   if (pokemonFilter != "") {
@@ -73,6 +77,10 @@ function filtrar(pokemonFilter) {
   } else {
     return pokemonsGlobal;
   }
+}
+
+function numero_apenas(numero){ 
+  return +String(numero).split('-')[0];
 }
 
 function contemTipo(busca, tipos) {

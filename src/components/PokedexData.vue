@@ -15,7 +15,7 @@ const state = reactive({
 
 function getBichao(pokenome) {
   let urlzao =
-    `https://pokeapi.co/api/v2/pokemon-species/` + pokenome.toLowerCase();
+    `https://pokeapi.co/api/v2/pokemon-species/` + remove_forms(pokenome.toLowerCase());
   axios
     .get(urlzao)
     .then(function (response) {
@@ -30,6 +30,13 @@ function getBichao(pokenome) {
     .catch(function (error) {
       console.log(error);
     });
+}
+
+function remove_forms(nome){
+  if (nome.includes('alolan')){
+  return nome.split('alolan ')[1];}
+
+  return nome;
 }
 
 import { defineProps } from "vue";

@@ -55,7 +55,7 @@
   ],
   "19": [
     "Rattata"
-  ],
+  ], 
   "20": [
     "Raticate"
   ],
@@ -2031,8 +2031,7 @@
     "Espurr"
   ],
   "678": [
-    "Meowstic ♂",
-    "Meowstic ♀"
+    "Meowstic ♂"
   ],
   "679": [
     "Honedge"
@@ -2426,5 +2425,24 @@
   ],
   "809": [
     "Melmetal"
+  ],
+  "810": [
+    "Alolan Rattata","19-alola"
+  ],
+  "811": [
+    "Alolan Raticate","20-alola"
+  ],
+  "812": [
+    "Alolan Raichu","26-alola"
+  ],
+  "813":[
+    "Alolan Sandshrew","27-alola"
+  ],
+  "814":[
+    "Alolan Sandslash","28-alola"
+  ],
+  "815":[
+    "teste"
   ]
+
 }

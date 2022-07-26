@@ -144,6 +144,19 @@
     "current_stage": 2,
     "total_stages": 2
   },
+  "Alolan Rattata": {
+    "into": [
+      "Alolan Raticate"
+    ],
+    "current_stage": 1,
+    "total_stages": 2,
+    "points": 10,
+    "level": 6
+  },
+  "Alolan Raticate": {
+    "current_stage": 2,
+    "total_stages": 2
+  },
   "Spearow": {
     "into": [
       "Fearow"
@@ -172,7 +185,8 @@
   },
   "Pikachu": {
     "into": [
-      "Raichu"
+      "Raichu",
+      "Alolan Raichu"
     ],
     "current_stage": 2,
     "total_stages": 3,
@@ -180,6 +194,10 @@
     "level": 8
   },
   "Raichu": {
+    "current_stage": 3,
+    "total_stages": 3
+  },
+  "Alolan Raichu": {
     "current_stage": 3,
     "total_stages": 3
   },
@@ -192,7 +210,20 @@
     "points": 10,
     "level": 7
   },
+  "Alolan Sandshrew": {
+    "into": [
+      "Alolan Sandslash"
+    ],
+    "current_stage": 1,
+    "total_stages": 2,
+    "points": 10,
+    "level": 7
+  },
   "Sandslash": {
+    "current_stage": 2,
+    "total_stages": 2
+  },
+  "Alolan Sandslash": {
     "current_stage": 2,
     "total_stages": 2
   },

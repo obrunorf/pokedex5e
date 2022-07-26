@@ -109,8 +109,12 @@ const { pokemon } = toRefs(props);
 const { evos } = toRefs(props);
 
 function getEvoImg(pokenome) {
-  if(pokenome === "Mr. Mime"){ pokenome = 'mr-mime'};
+  if(pokenome === "Mr. Mime"){ pokenome = 'mr-mime'};  
   let urlzao = `https://pokeapi.co/api/v2/pokemon/` + pokenome.toLowerCase();
+
+   if (pokenome.includes('Alolan')){
+    return getAlolaIcon(pokenome);
+  } 
   return axios
     .get(urlzao)
     .then(function (response) {
@@ -141,12 +145,21 @@ const init = async () => {
 };
 
 function getPreviousStage(pokenome) {
-  if(pokenome === "Mr. Mime"){ pokenome = 'mr-mime'};
-  let urlzao = `https://pokeapi.co/api/v2/pokemon-species/` + pokenome.toLowerCase();
+  let predicado = '';
+  let nome_puro = pokenome;
+  if(pokenome === "Mr. Mime"){ nome_puro = 'mr-mime'};
+  if(pokenome.includes('Alolan')){
+    nome_puro = pokenome.split('Alolan ')[1];
+    if (!pokenome.includes('Raichu')){
+      predicado = 'Alolan ';
+    }
+  }
+
+  let urlzao = `https://pokeapi.co/api/v2/pokemon-species/` + nome_puro.toLowerCase();
   return axios
     .get(urlzao)
     .then(function (response) {                    
-      return response.data.evolves_from_species.name;
+      return predicado + response.data.evolves_from_species.name.capitalize();
     })
     .catch(function (error) {
       console.log(error);
@@ -155,6 +168,11 @@ function getPreviousStage(pokenome) {
 
 function getPreImg(pokenome) {
   if(pokenome === "Mr. Mime"){ pokenome = 'mr-mime'};
+
+  if (pokenome.includes('Alolan')){
+    return getAlolaIcon(pokenome);
+  } 
+
   let urlzao = `https://pokeapi.co/api/v2/pokemon/` + pokenome.toLowerCase();
    return axios
     .get(urlzao)
@@ -167,6 +185,17 @@ function getPreImg(pokenome) {
       console.log(error);
     });
 }
+
+function getAlolaIcon(pokenome){
+    if(pokenome === "Alolan Raticate"){ pokenome = '20-alola'};
+    if(pokenome === "Alolan Rattata"){ pokenome = '19-alola'};
+    if(pokenome === "Alolan Raichu"){ pokenome = '26-alola'};
+    if(pokenome === "Alolan Sandshrew"){ pokenome = '27-alola'};
+    if(pokenome === "Alolan Sandslash"){ pokenome = '28-alola'};
+    return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/" +
+        pokenome +
+        ".png";
+  }
 init();
 </script>
 

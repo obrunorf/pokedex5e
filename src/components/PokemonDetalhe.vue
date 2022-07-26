@@ -15,7 +15,7 @@
         <div class="md:overflow-y-auto md:max-h-96">
           <!-- coluna 1 -->
           <h1 class="text-3xl font-extrabold">
-            {{ pokemon.name }} #{{ pokemon.index }}
+            {{ pokemon.name }} #{{ pokemon.id }}
           </h1>
           <div>
             <span class="font-bold"> Classification:</span>
@@ -233,6 +233,10 @@ function getHiddenAbility(pokemon) {
 
 function init(){
   window.scrollTo(0,0); 
+}
+
+function numero_apenas(numero){ 
+  return +String(numero).split('-')[0];
 }
 
 import { defineProps } from "vue";
