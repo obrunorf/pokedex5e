@@ -8,7 +8,12 @@
       ← Go Back
     </div>
     <div class="hidden md:block" v-if="!pokemon">
-      <h1>Select a pokemon.</h1>
+      <h1>NOTICE OF SHUTDOWN</h1>
+        <body>
+        <p>This pokedex 5e will be shutdown at the end of July 2026. Go to the beautiful and updated https://poke5e.app/ for your trainer needs. </p>
+        <p>Source code will remain available at the github. Any questions, contact me on discord: @kyuuno</p>
+        <p>Farewell</p>
+        </body>
     </div>
     <div v-else class="leading-tight">
       <div class="grid grid-cols-1 md:grid-cols-2 leading-snug">
